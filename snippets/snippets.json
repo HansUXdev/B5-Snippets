@@ -1,6 +1,6 @@
 {
 	"Bootstrap 5 scripts": {
-		"prefix": "b5-scripts",
+		"prefix": "b5-$",
 		"body": [
 			"<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css\" integrity=\"sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I\" crossorigin=\"anonymous\">",
 			"<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js\" integrity=\"sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/\" crossorigin=\"anonymous\"></script>",
@@ -8,8 +8,8 @@
 		],
 		"description": "Adds the cnd for the css scripts and has an option to use popper."
 	},
-	"Hello Bootstrap 5": {
-		"prefix": "!b5-hello",
+	"Bootstrap 5 HTML Template": {
+		"prefix": "!b5-$",
 		"body": [
 			"<!DOCTYPE html>",
 			"<html lang=\"en\">",
@@ -79,7 +79,7 @@
 		"description": "Bootstrap 5 Navbar"
 	},
 	"Bootstrap 5 nav-item": {
-		"prefix": "b5-nI",
+		"prefix": "b5-nav-item",
 		"body": [
 			"<li class=\"${1|nav-item,dropdown-item, |}\">",
 			"    <a class=\"${2|nav-link,nav-link active, |}\" aria-current=\"${3|page, |}\" href=\"${4|#, |}\">${5|Home,About,Blog,Contact, |}</a>",
@@ -88,7 +88,7 @@
 		"description": "Bootstrap 5 nav-item"
 	},
 	"Bootstrap 5 navlink": {
-		"prefix": "b5-nl",
+		"prefix": "b5-navlink",
 		"body": [
 			"<a class=\"nav-link\" ${1| aria-disabled=\"false\",disabled tabindex=\"-1\" aria-disabled=\"true\"|} href=\"${2|#, |}\">${3|Home,About,Blog,Contact, |}</a>",
 			""

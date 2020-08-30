@@ -1,40 +1,60 @@
-# Bootstrap 5 README
+# Bootstrap 5 for [open-vsx](https://open-vsx.org/)
 
-The bootstrap 5 snippets for open-vsx.
+The first and (currently only) bootstrap 5 snippet extension.
+Published on the ONLY [open source registry](https://open-vsx.org/about) for VS Code extensions.
 
+Learn more about open source versions of vscode such as [vscodium](https://vscodium.com/), [GitPod's IDE](https://www.gitpod.io/docs/ide/) and more.
+
+## Notes & Roadmap
+Bootstrap 5 is currently in alpha and this extension does not implement all the component yet (see the todo list below).
+
+Unlike a lot of other snippets, this extension aims to balence user simplicity, with power and flexibility by keeping the **total number of snippets to a minimum**. 
+
+In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different snippets for the grid, whereas this will have 3, but each is more powerful.
+
+## Roadmap
+* Each snippet with eventually have a gif demo (soon).
+* When Bootstrap gets out of alpha, I will create snippets for templates, such as `b5-$-marketing`, and possibly if [requested](https://github.com/HansUXdev/B5-Snippets/issues/1) or [sponsored](https://github.com/sponsors/HansUXdev/).
 
 ## Features
 
+#### Templates/Layout
+
+Trigger | Description
+--- | ---
+b5-**$** | Shortcut for bootstrap cdn css & js files
+**!**b5-**$** | Shortcut creating an html document with cdn scripts included
+**!**b5-**$**-layout-name | Common layouts (coming soon).
+**!**b5-**$**-marketing | Shortcut creating a marketing template (soon).
 
 #### Grid
 
 Trigger | Description
 --- | ---
-b5-**grid-col** | Grid col
-b5-**grid-container-fluid** | Grid container fluid
-b5-**grid-container** | Grid container
-b5-**grid-default** | Grid default
-b5-**grid-row** | Grid row
+b5-**container** | Grid container with options for -fluid, px, gy and more.
+b5-**row** | Powerful row, `${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,md,lg,xl,xxl|}`. Default to row with optional utility classes. 
+b5-**col** | Pretty much all your need covered and more. Ex: `col${1| ,-1,-2,-3,-4,-5,-6,-sm,-md,-lg,-xl,-xxl|}${2| ,-auto,-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12`
 
 #### Navbar
 
 Trigger | Description
 --- | ---
-b5-**navbar-background-color** | Navbar background color
-b5-**navbar-background** | Navbar background
 b5-**navbar-default** | Navbar default
-b5-**navbar-minimal-a** | Navbar minimal a
-b5-**navbar-minimal-ul** | Navbar minimal ul
-b5-**navbar-non-responsive** | Navbar non responsive
-b5-**navbar-placement** | Navbar placement
+b5-**nav-item** | item with link and options for common pages such as Home, About, Blog, Contact.
+b5-**navlink** | link
+b5-**nav-dropdown** | dropdown
+b5-**nav-dropdown toggle** | Navbar toggle
+b5-**navbar-scollspy** | coming soon...
+
 
 
 #### Button
 
 Trigger | Description
 --- | ---
-b5-**button-a** | Button a
-
+b5-**btn** | Button with link
+b5-**btn-o** | Button with outline
+b5-**btn-group** | More buttons coming soon...
 
 <!-- #### Bgroup
 Trigger | Description
@@ -63,8 +83,9 @@ b4-**dropdown-up** | Dropdown up -->
 
 Trigger | Description
 --- | ---
+b4-**card** | Card
 b4-**card-align** | Card align
-
+b4-**card-align** | more coming soon...
 
 #### Carousel
 
@@ -77,18 +98,15 @@ b4-**carousel-default** | Carousel default
 
 Trigger | Description
 --- | ---
-b5-**collapse-accordion** | Collapse accordion
-b5-**collapse-button** | Collapse button
-b5-**collapse-default** | Collapse default
-
-
-
+b5-btn-reveal | Reveals content on click
+b5-**collapse-Multiple** | Collapses multiple targets (soon...)
 
 #### Progress
 
 Trigger | Description
 --- | ---
-b5-**progress-colored** | Progress colored
+b4-**progress** | progress bar
+
 
 
 ## Todo
@@ -110,10 +128,9 @@ b5-**progress-colored** | Progress colored
 - [ ] Typography
 
 
+<!-- ## Requirements
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+If you have any requirements or dependencies, add a section describing those and how to install and configure them. -->
 
 <!-- ## Extension Settings
 
@@ -138,7 +155,7 @@ Users appreciate release notes as you update your extension.
 Initial release of ...
 
 
-**Enjoy!**
+# **Enjoy!**
 
 
 ## Supporting Developers 

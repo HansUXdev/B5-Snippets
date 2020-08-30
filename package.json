@@ -1,7 +1,7 @@
 {
   "name": "bootstrap5-snippets",
   "description": "Code snippets for Bootstrap 5 ",
-  "version": "1.8.0",
+  "version": "1.0.0",
   "displayName": "Bootstrap 5 Snippets",
   "publisher": "HansUXdev",
   "icon": "images/bootstrap.png",
