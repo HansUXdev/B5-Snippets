@@ -1,3 +1,7 @@
+# Ignore
+.vscode/
+src/
+
 # Logs
 logs
 *.log

@@ -1,0 +1,197 @@
+{
+	"Bootstrap 5 scripts": {
+		"prefix": "b5-scripts",
+		"body": [
+			"<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css\" integrity=\"sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I\" crossorigin=\"anonymous\">",
+			"<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js\" integrity=\"sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/\" crossorigin=\"anonymous\"></script>",
+			"${1|<script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\" integrity=\"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo\" crossorigin=\"anonymous\"></script>, |}"
+		],
+		"description": "Adds the cnd for the css scripts and has an option to use popper."
+	},
+	// LAYOUTS
+	"Bootstrap 5 container": {
+		"prefix": "b5-contain",
+		"body": [
+			"<div class=\"container${1|-fluid, ,-sm,-md,-lg,-xl,-xxl|}${2| ,overflow-hidden|} ${3|px-1,px-2,px-3,px-4,px-5|} ${4|gy-1,gy-2,gy-3,gy-4,gy-5|}\">",
+			"b5-row${0}",
+			"</div>"
+		],
+		"description": "Bootstrap 5 container"
+	},
+	"Bootstrap 5 row": {
+		"prefix": "b5-row",
+		"body": [
+			"<div class=\"row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,md,lg,xl,xxl|}\">",
+			"b5${0}",
+			"</div>"
+		],
+		"description": "Bootstrap 5 row"
+	},
+	"Bootstrap 5 col": {
+		"prefix": "b5-col",
+		"body": [
+			"  <div class=\"col${1| ,-1,-2,-3,-4,-5,-6,-sm,-md,-lg,-xl,-xxl|}${2| ,-auto,-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12|}\">",
+			"    b5${0}",
+			"  </div>"
+		],
+		"description": "Bootstrap 5 col"
+	},
+	// NAV
+	"Bootstrap 5 Navbar": {
+		"prefix": "b5-navbar-default",
+		"body": [
+			"<nav class=\"navbar ${1|navbar-expand-lg,navbar-expand- |} ${2|navbar-light bg-light,navbar-dark bg-dark, navbar-dark bg-primary|}\">",
+			"  <div class=\"container-fluid\">",
+			"    <a class=\"navbar-brand\" href=\"${3|#, |}\">",
+			"    <img src=\"${4|https://hansmcmurdy.com/JavaScript-First/logo.svg, |}\" width=\"30\" height=\"30\" alt=\"\" loading=\"lazy\">",
+			"    </a>",
+			"    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"${5|#navbarNavAltMarkup, |}\" aria-controls=\"${5|#navbarNavAltMarkup, |}\"  aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+			"      <span class=\"navbar-toggler-icon\"></span>",
+			"    </button>",
+			"    <div class=\"collapse navbar-collapse\" id=\"${5|#navbarNavAltMarkup, |}\">",
+			"      <div class=\"navbar-nav\">",
+			"        b5-nl${0}",
+			"      </div>",
+			"    </div>",
+			"  </div>",
+			"</nav>"
+		],
+		"description": "Bootstrap 5 Navbar"
+	},
+	"Bootstrap 5 nav-item": {
+		"prefix": "b5-nI",
+		"body": [
+			"<li class=\"${1|nav-item,dropdown-item, |}\">",
+			"    <a class=\"${2|nav-link,nav-link active, |}\" aria-current=\"${3|page, |}\" href=\"${4|#, |}\">${5|Home,About,Blog,Contact, |}</a>",
+			"</li>"
+		],
+		"description": "Bootstrap 5 nav-item"
+	},
+	"Bootstrap 5 navlink": {
+		"prefix": "b5-nl",
+		"body": [
+			"<a class=\"nav-link\" ${1| aria-disabled=\"false\",disabled tabindex=\"-1\" aria-disabled=\"true\"|} href=\"${2|#, |}\">${3|Home,About,Blog,Contact, |}</a>",
+			""
+		],
+		"description": "Bootstrap 5 navlink"
+	},
+	"Bootstrap 5 nav-dropdown toggle": {
+		"prefix": "b5-navdd-toggle",
+		"body": [
+			"<a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"${1|navbarDropdownMenuLink, |}\" role=\"button\" data-toggle=\"dropdown\" aria-expanded=\"false\">",
+			"b5-n${0}",
+			"</a>"
+		],
+		"description": "Bootstrap 5 nav-dropdown toggle"
+	},
+	"Bootstrap 5 nav-dropdown": {
+		"prefix": "b5-navdropdown",
+		"body": [
+			"<ul class=\"dropdown-menu\" aria-labelledby=\"${1|navbarDropdownMenuLink, |}\">",
+			"b5-n${0}",
+			"</ul>"
+		],
+		"description": "Bootstrap 5 nav-dropdown"
+	},
+	// Card Snippet
+	"Bootstrap 5 Card": {
+		"prefix": "b5-card",
+		"body": [
+			"<div class=\"card\" style=\"width:${1|18rem;, |}\">",
+			"  <img src=\"${2|https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60, |}\" class=\"card-img-top\" alt=\"...\">",
+			"  <div class=\"card-body\">",
+			"    <h5 class=\"card-title\">${3|Card title, |}</h5>",
+			"    <h6 class=\"card-subtitle ${4|mb-2 text-muted, |} \">${5|Card subtitle, |}</h6>",
+			"    <p class=\"card-text\">${6|Some quick example text to build on the card title and make up the bulk of the card's content., |}</p>",
+			"    b5${0}",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 5 Card"
+	},
+	// Quotes
+	"Bootstrap 5 Block Quote": {
+		"prefix": "b5-quote",
+		"body": [
+			"    <blockquote class=\"blockquote ${1|mb-0, |}\">",
+			"      <p>${2|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante., | }</p>",
+			"      <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>",
+			"    </blockquote>"
+		],
+		"description": "Bootstrap 5 Block Quote"
+	},
+	// BTN
+	"Link BTN": {
+		"prefix": "b5-btn",
+		"body": [
+			"<a class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+		],
+		"description": "Link BTN"
+	},
+	"BTN-Outline": {
+		"prefix": "b5-btn-o",
+		"body": [
+			"<a class=\"btn btn-outline-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+		],
+		"description": "Link BTN"
+	},
+	"Bootstrap 5 BTN Reveal": {
+		"prefix": "b5-btn-reveal",
+		"body": [
+			"<button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${1|collapseExample, |}\" aria-expanded=\"false\" aria-controls=\"${1|collapseExample, |}\">",
+			"    ${2|Button with data-target, |}",
+			"</button>",
+			"<div class=\"collapse\" id=\"${1|collapseExample, |}\">",
+			"  <div class=\"card card-body\">",
+			"    ${3|Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident., |}",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 5 BTN Reveal"
+	},
+	// progress
+	"Bootstrap 5 progress": {
+		"prefix": "b5-progress",
+		"body": [
+			"<div class=\"progress\">",
+			"  <div class=\"progress-bar ${2| ,bg-warning,bg-success,bg-info,bg-danger|}\" role=\"progressbar\" style=\"width: ${1| ,25,50,75,100|}%\" aria-valuenow=\"${1| ,25,50,75,100|}\" aria-valuemin=\"0\" aria-valuemax=\"100\">${1| ,25,50,75,100|}</div>",
+			"</div>"
+		],
+		"description": "Bootstrap 5 progress"
+	},
+	// carousel
+	"Bootstrap 5 carousel": {
+		"prefix": "b5-carousel",
+		"body": [
+			"<div id=\"${1:slider1}\" class=\"carousel slide\" data-ride=\"carousel\">",
+			"  <ol class=\"carousel-indicators\">",
+			"    <li data-target=\"#${1:slider1}\" data-slide-to=\"0\" class=\"active\"></li>",
+			"    <li data-target=\"#${1:slider1}\" data-slide-to=\"1\"></li>",
+			"    <li data-target=\"#${1:slider1}\" data-slide-to=\"2\"></li>",
+			"  </ol>",
+			"  <div class=\"carousel-inner\">",
+			"    b5-carousel-item${0}",
+			"  </div>",
+			"  <a class=\"carousel-control-prev\" href=\"#${1:slider1}\" role=\"button\" data-slide=\"prev\">",
+			"    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+			"    <span class=\"sr-only\">Previous</span>",
+			"  </a>",
+			"  <a class=\"carousel-control-next\" href=\"#${1:slider1}\" role=\"button\" data-slide=\"next\">",
+			"    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+			"    <span class=\"sr-only\">Next</span>",
+			"  </a>",
+			"</div>",
+			""
+		],
+		"description": "Bootstrap 5 carousel"
+	},
+	"Bootstrap 5 carousel item": {
+		"prefix": "b5-carousel-item",
+		"body": [
+			"    <div class=\"${1|carousel-item,carousel-item active|}\">",
+			"      <img src=\"${2|https://images.unsplash.com/photo-1518384491952-3f4731b5f9cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60,https://images.unsplash.com/photo-1580821810660-5486b8e980a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60|}\" class=\"d-block w-100\" alt=\"${3:The developer is an asshole and didn't want to help you, I'm sorry about that.}\">",
+			"    </div>"
+		],
+		"description": "Bootstrap 5 carousel item"
+	}
+}
