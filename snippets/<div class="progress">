@@ -1,4 +1,0 @@
-<div class="progress">
-    <div class="${1|progress-bar,progress-bar progress-bar-striped|}progress-bar  bg-${1:primary|secondary|success|danger|warning|info|light|dark}" role="progressbar" style="width: ${2|25,50,75,100, |}%;"
-        aria-valuenow="${| ,25,50,75,100|}" aria-valuemin="${3:0}" aria-valuemax="${4:100}" ${5| ,progress-bar-animated}>${6:Description}</div>
-</div>
