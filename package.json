@@ -1,10 +1,10 @@
 {
   "name": "bootstrap5-snippets",
   "description": "Code snippets for Bootstrap 5 ",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Bootstrap 5 Snippets",
   "publisher": "HansUXdev",
-  "icon": "images/bootstrap.png",
+  "icon": "bootstrap.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
@@ -15,6 +15,12 @@
   },
   "categories": [
     "Snippets"
+  ],
+  "keywords": [
+    "Bootstrap 5",
+    "Bootstrap",
+    "Snippets",
+    "Bootstrap Snippets"
   ],
   "contributes": {
     "snippets": [

@@ -28,7 +28,6 @@
 		],
 		"description": "An HTML Boilerplate with  Bootstrap 5"
 	},
-	// LAYOUTS
 	"Bootstrap 5 container": {
 		"prefix": "b5-contain",
 		"body": [
@@ -56,7 +55,6 @@
 		],
 		"description": "Bootstrap 5 col"
 	},
-	// NAV
 	"Bootstrap 5 Navbar": {
 		"prefix": "b5-navbar-default",
 		"body": [
@@ -113,7 +111,6 @@
 		],
 		"description": "Bootstrap 5 nav-dropdown"
 	},
-	// Card Snippet
 	"Bootstrap 5 Card": {
 		"prefix": "b5-card",
 		"body": [
@@ -129,7 +126,6 @@
 		],
 		"description": "Bootstrap 5 Card"
 	},
-	// Quotes
 	"Bootstrap 5 Block Quote": {
 		"prefix": "b5-quote",
 		"body": [
@@ -140,7 +136,6 @@
 		],
 		"description": "Bootstrap 5 Block Quote"
 	},
-	// BTN
 	"Link BTN": {
 		"prefix": "b5-btn",
 		"body": [
@@ -154,6 +149,15 @@
 			"<a class=\"btn btn-outline-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
 		],
 		"description": "Link BTN"
+	},
+	"Button Group": {
+		"prefix": "b5-btn-gp",
+		"body": [
+			"<div class=\"btn-group ${2| ,btn-group-vertical,btn-group-sm,btn-group-lg,h1|} ${3|m,p|}${4|t,r,b,l,x,y|}${5|auto,0,1,2,3,4,5|}\" role=\"group\" aria-label=\"${1:Basic example}\">",
+			"    b5-btn${0}",
+			"</div>"
+		],
+		"description": "Button Group"
 	},
 	"Bootstrap 5 BTN Reveal": {
 		"prefix": "b5-btn-reveal",
@@ -169,17 +173,170 @@
 		],
 		"description": "Bootstrap 5 BTN Reveal"
 	},
-	// progress
-	"Bootstrap 5 progress": {
+	"Pagination": {
+		"prefix": "b5-pagination",
+		"body": [
+			"<nav aria-label=\"${10:Page navigation example}\">",
+			"  <ul class=\"pagination ${1|pagination-sm,pagination-lg;|}\">",
+			"    <li class=\"page-item\">",
+			"      <a class=\"page-link\" href=\"#\" aria-label=\"Previous\">",
+			"        <span aria-hidden=\"true\">${2|Previous,&laquo;|}</span>",
+			"      </a>",
+			"    </li>",
+			"    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>",
+			"    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>",
+			"    ${0}",
+			"    <li class=\"page-item\">",
+			"      <a class=\"page-link\" href=\"#\" aria-label=\"Next\">",
+			"        <span aria-hidden=\"true\">${3|Next,&raquo;|}</span>",
+			"      </a>",
+			"    </li>",
+			"  </ul>",
+			"</nav>"
+		],
+		"description": "Pagination"
+	},
+	"Text Utility": {
+		"prefix": "b5-txt",
+		"body": [
+			"<${1|div,p,h1|} class=\"text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|italic,normal,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|text-reset,break,monospace|}\">",
+			"${9:Left aligned text on all viewport sizes.}",
+			"</${1|div,p,h1|}>"
+		],
+		"description": "Text Utility"
+	},
+	"Utility Borders": {
+		"prefix": "b5-borders",
+		"body": [
+			"<${1|div,p,h1|} class=\"border${1| ,-0,-top,-right,-bottom,-left,-top-0,-right-0,-bottom-0,-left-0|} border-${2|white,primary,secondary,success,danger,warning,info,light,dark|} ${3| ,rounded,rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,rounded-pill|} ${4| ,rounded-sm,rounded-lg|}\">",
+			"${10:Left aligned text on all viewport sizes.}",
+			"</${1|div,p,h1|}>"
+		],
+		"description": "Utility Borders"
+	},
+	"Utility Spacing": {
+		"prefix": "b5-Spacing",
+		"body": [
+			"<${1|div,p,h1|} class=\"${2|m,p|}${3|t,r,b,l,x,y|}${3|auto,0,1,2,3,4,5|} \">",
+			"${0}",
+			"</${1|div,p,h1|}>"
+		],
+		"description": "Utility Spacing"
+	},
+	"Modal-BTN": {
+		"prefix": "b5-modal-btn",
+		"body": [
+			"<button type=\"button\" class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|}\" data-toggle=\"modal\" data-target=\"#${2:exampleModal}\">",
+			"  ${3:Launch demo modal}",
+			"</button>"
+		],
+		"description": "Modal-BTN"
+	},
+	"Modal-BTN": {
+		"prefix": "b5-modal-btn",
+		"body": [
+			"<div class=\"modal fade\" id=\"${1:staticBackdrop}\" data-backdrop=\"static\" data-keyboard=\"false\" tabindex=\"-1\" aria-labelledby=\"${1:staticBackdrop}\" aria-hidden=\"true\">",
+			"  <div class=\"modal-dialog\">",
+			"    <div class=\"modal-content\">",
+			"      <div class=\"modal-header\">",
+			"        <h5 class=\"modal-title\" id=\"${2:staticBackdropLabel}\">${3:Modal title}</h5>",
+			"        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+			"          <span aria-hidden=\"true\">&times;</span>",
+			"        </button>",
+			"      </div>",
+			"      <div class=\"modal-body\">",
+			"        ${0}",
+			"      </div>",
+			"      ${4| ,<div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button></div>|}",
+			"    </div>",
+			"  </div>",
+			"</div>",
+			""
+		],
+		"description": "Modal-Body"
+	},
+	"Modal-BTN": {
+		"prefix": "b5-modal-btn",
+		"body": [
+			"<div class=\"modal fade ${6|modal-sm,modal-lg,modal-xl|}\" id=\"${1:staticBackdrop}\" data-backdrop=\"static\" data-keyboard=\"false\" tabindex=\"-1\" aria-labelledby=\"${1:staticBackdrop}\" aria-hidden=\"true\">",
+			"  <div class=\"modal-dialog ${5|modal-dialog-centered, modal-dialog-scrollable|}\">",
+			"    <div class=\"modal-content\">",
+			"      <div class=\"modal-header\">",
+			"        <h5 class=\"modal-title\" id=\"${2:staticBackdropLabel}\">${3:Modal title}</h5>",
+			"        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">",
+			"          <span aria-hidden=\"true\">&times;</span>",
+			"        </button>",
+			"      </div>",
+			"      <div class=\"modal-body\">",
+			"        ${0}",
+			"      </div>",
+			"      ${4| ,<div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button></div>|}",
+			"    </div>",
+			"  </div>",
+			"</div>",
+			""
+		],
+		"description": "Modal-BTN"
+	},
+	"badge": {
+		"prefix": "b5-badge",
+		"body": [
+			"<span class=\"badge ${1|rounded-pill,secondary,success|} bg-${2|primary,secondary,success,danger,warning,info,light,dark|} ${3| ,text-dark}\">${4:Primary}</span>"
+		],
+		"description": "badge"
+	},
+	"tooltips": {
+		"prefix": "b5-tooltip",
+		"body": [
+			"<button type=\"button\" class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|}\" data-toggle=\"tooltip\" data-placement=\"${2|top,right,bottom,left|}\" title=\"${2:Tooltip on top}\">",
+			"  ${2:Tooltip on top}",
+			"</button>"
+		],
+		"description": "tooltips"
+	},
+	"alert": {
+		"prefix": "b5-alert",
+		"body": [
+			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|}\" role=\"alert\">",
+			"  ${2:A simple primary alert—check it out!}",
+			"</div>"
+		],
+		"description": "alert"
+	},
+	"alert big": {
+		"prefix": "b5-alert-big",
+		"body": [
+			"<div class=\"alert alert-${1|primary,secondary,success,danger,warning,info,light,dark|} alert-dismissible fade show\" role=\"alert\">",
+			"<h4 class=\"alert-heading\">$2:Well done!}</h4>",
+			"  <strong>${3:Holy guacamole!}</strong> ",
+			"  <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">",
+			"    <span aria-hidden=\"true\">&times;</span>",
+			"  </button>",
+			"</div>"
+		],
+		"description": "alert big"
+	},
+	"breadcumb": {
+		"prefix": "b5-breadcumb",
+		"body": [
+			"<${1:nav} class=\"breadcrumb\" aria-label=\"breadcrumb\">",
+			"  <${2:ol}>",
+			"  <li class=\"${3|breadcrumb-item|, breadcrumb-item active}\"><a href=\"${5}\">${6:Library}</a></li>",
+			"  </${2:ol|}>",
+			"</${1:nav}>"
+		],
+		"description": "breadcumb"
+	},
+	"Progress Bar": {
 		"prefix": "b5-progress",
 		"body": [
 			"<div class=\"progress\">",
-			"  <div class=\"progress-bar ${2| ,bg-warning,bg-success,bg-info,bg-danger|}\" role=\"progressbar\" style=\"width: ${1| ,25,50,75,100|}%\" aria-valuenow=\"${1| ,25,50,75,100|}\" aria-valuemin=\"0\" aria-valuemax=\"100\">${1| ,25,50,75,100|}</div>",
+			"    <div class=\"${1|progress-bar,progress-bar progress-bar-striped|}  bg-${2|success,info,success,warning,wardanger}}\" role=\"progressbar\" style=\"width: ${3|25,50,75,100, |}%;\"",
+			"        aria-valuenow=\"${3|25,50,75,100, |}\" aria-valuemin=\"${4:0}\" aria-valuemax=\"${5:100}\" ${6| ,progress-bar-animated}>${6:Description}</div>",
 			"</div>"
 		],
-		"description": "Bootstrap 5 progress"
+		"description": "Progress Bar"
 	},
-	// carousel
 	"Bootstrap 5 carousel": {
 		"prefix": "b5-carousel",
 		"body": [

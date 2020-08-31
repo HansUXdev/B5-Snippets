@@ -4,6 +4,11 @@ The first and (currently only) bootstrap 5 snippet extension.
 Published on the ONLY [open source registry](https://open-vsx.org/about) for VS Code extensions.
 
 Learn more about open source versions of vscode such as [vscodium](https://vscodium.com/), [GitPod's IDE](https://www.gitpod.io/docs/ide/) and more.
+<!-- 
+## Installing
+The simplest way is to install command line.
+`code --install-extension myextension.vsix` -->
+
 
 ## Notes & Roadmap
 Bootstrap 5 is currently in alpha and this extension does not implement all the component yet (see the todo list below).
@@ -62,37 +67,37 @@ Trigger | Description
 b5-**bgroup-default** | Bgroup default
 b5-**bgroup-dropdown-vertical** | Bgroup dropdown vertical
 b5-**bgroup-dropdown** | Bgroup dropdown
-b4-**bgroup-size** | Bgroup size
-b4-**bgroup-toolbar** | Bgroup toolbar -->
+b5-**bgroup-size** | Bgroup size
+b5-**bgroup-toolbar** | Bgroup toolbar -->
 
 <!-- #### Dropdown
 
 Trigger | Description
 --- | ---
-b4-**dropdown-alignment** | Dropdown alignment
-b4-**dropdown-anchor** | Dropdown anchor
-b4-**dropdown-button** | Dropdown button
-b4-**dropdown-colored** | Dropdown colored
-b4-**dropdown-default** | Dropdown default
-b4-**dropdown-sized** | Dropdown sized
-b4-**dropdown-split** | Dropdown split
-b4-**dropdown-up-split** | Dropdown up split
-b4-**dropdown-up** | Dropdown up -->
+b5-**dropdown-alignment** | Dropdown alignment
+b5-**dropdown-anchor** | Dropdown anchor
+b5-**dropdown-button** | Dropdown button
+b5-**dropdown-colored** | Dropdown colored
+b5-**dropdown-default** | Dropdown default
+b5-**dropdown-sized** | Dropdown sized
+b5-**dropdown-split** | Dropdown split
+b5-**dropdown-up-split** | Dropdown up split
+b5-**dropdown-up** | Dropdown up -->
 
 #### Card
 
 Trigger | Description
 --- | ---
-b4-**card** | Card
-b4-**card-align** | Card align
-b4-**card-align** | more coming soon...
+b5-**card** | Card
+b5-**card-align** | Card align
+b5-**card-align** | more coming soon...
 
 #### Carousel
 
 Trigger | Description
 --- | ---
-b4-**carousel-caption** | Carousel caption
-b4-**carousel-default** | Carousel default
+b5-**carousel-caption** | Carousel caption
+b5-**carousel-default** | Carousel default
 
 #### Collapse
 
@@ -105,27 +110,47 @@ b5-**collapse-Multiple** | Collapses multiple targets (soon...)
 
 Trigger | Description
 --- | ---
-b4-**progress** | progress bar
+b5-**progress** | progress bar
 
+#### Breadcrumb
 
+Trigger | Description
+--- | ---
+b5-**Breadcrumb** | Breadcrumb
+
+#### Collapse
+
+Trigger | Description
+--- | ---
+b5-collaps | supports both single and multiple ta
+
+#### Utility Classes
+
+Trigger | Description
+--- | ---
+b5-**text** | select the element type and style your font.
+b5-**border** | change border attributes: `border${1| ,-0,-top,-right,-bottom,-left,-top-0,-right-0,-bottom-0,-left-0|}
+${2|white,primary,secondary,success,danger,warning,info,light,dark|}
+${3|rounded,rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,rounded-pill|}
+${4|rounded-sm,rounded-lg|}`
 
 ## Todo
-- [ ] Breadcrumb
+- [ ] Flex
+- [x] Breadcrumb
+- [x] Alert
+- [x] Badge
+- [x] Typography
+- [x] Button group
+- [x] Pagination
 - [ ] Nav
-- [ ] Alert
-- [ ] Badge
-- [ ] Button group
-- [ ] Dropdown
 - [ ] Form
 - [ ] Media
-- [ ] Responsive
 - [ ] Figure
 - [ ] List
-- [ ] Tooltip
-- [ ] Modal
-- [ ] Pagination
+- [x] Tooltip
 - [ ] Popover
-- [ ] Typography
+- [x] Modal
+- [ ] Dropdown
 
 
 <!-- ## Requirements
