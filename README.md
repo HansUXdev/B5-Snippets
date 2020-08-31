@@ -18,7 +18,10 @@ Learn more about **open source** versions of vscode such as [vscodium](https://v
 ## Installing
 The simplest way is to install command line.
 `code --install-extension myextension.vsix` -->
+## Templates one tab away!
+More coming soon...
 
+![](Templates.gif)
 
 ## Notes
 Bootstrap 5 is currently in alpha and this extension does not implement all the component yet (see the todo list below).
