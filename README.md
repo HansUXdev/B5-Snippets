@@ -1,16 +1,26 @@
-# Bootstrap 5 for [open-vsx](https://open-vsx.org/)
+# Bootstrap 5 
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![GitHub](https://img.shields.io/github/stars/HansUXdev/B5-Snippets.svg?style=flat-square)](https://github.com/HansUXdev/B5-Snippets) [![GitHub](https://img.shields.io/github/followers/HansUXdev.svg?style=flat-square)](https://github.com/HansUXdev)
 
-The first and (currently only) bootstrap 5 snippet extension.
-Published on the ONLY [open source registry](https://open-vsx.org/about) for VS Code extensions.
+<!-- [![GitHub](https://img.shields.io/github/release/HansUXdev/B5-Snippets.svg?style=flat-square)](https://github.com/HansUXdev/B5-Snippets/releases) -->
 
-Learn more about open source versions of vscode such as [vscodium](https://vscodium.com/), [GitPod's IDE](https://www.gitpod.io/docs/ide/) and more.
+The first, (currently only) and hands down BEST bootstrap 5 snippet extension. Includes templates, powerful utility snippets, and much more.
+
+
+# Open Source Marketplace
+This may surprizes you but VS Code and it's marketplace isn't really open source and is licensed under a not-FLOSS license and contains telemetry/tracking, [read more...](https://vscodium.com/)
+
+This extension is built for [open-vsx](https://open-vsx.org/) and published on the ONLY [open source registry](https://open-vsx.org/about) for VS Code extensions.
+
+<!-- **Eventually, this extension may be removed from [visual studio marketplace](https://marketplace.visualstudio.com/) in order raise awareness**. -->
+
+Learn more about **open source** versions of vscode such as [vscodium](https://vscodium.com/), [GitPod's IDE](https://www.gitpod.io/docs/ide/) and more.
 <!-- 
 ## Installing
 The simplest way is to install command line.
 `code --install-extension myextension.vsix` -->
 
 
-## Notes & Roadmap
+## Notes
 Bootstrap 5 is currently in alpha and this extension does not implement all the component yet (see the todo list below).
 
 Unlike a lot of other snippets, this extension aims to balence user simplicity, with power and flexibility by keeping the **total number of snippets to a minimum**. 
@@ -18,8 +28,21 @@ Unlike a lot of other snippets, this extension aims to balence user simplicity, 
 In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different snippets for the grid, whereas this will have 3, but each is more powerful.
 
 ## Roadmap
-* Each snippet with eventually have a gif demo (soon).
-* When Bootstrap gets out of alpha, I will create snippets for templates, such as `b5-$-marketing`, and possibly if [requested](https://github.com/HansUXdev/B5-Snippets/issues/1) or [sponsored](https://github.com/sponsors/HansUXdev/).
+* v1.5 - Each snippet with eventually have a gif demo (soon).
+* v2 - All base [templates](https://v5.getbootstrap.com/docs/5.0/examples/) and several others will be one tab away, so consider  [sponsoring this](https://github.com/sponsors/HansUXdev/) or giving it a star.
+
+
+## Todo
+- [ ] Flex Utility
+- [ ] Nav
+- [ ] Navbar
+- [ ] ScrollSpy
+- [ ] Form
+- [ ] Media
+- [ ] Figure
+- [ ] List
+- [ ] Popover
+- [ ] Dropdown
 
 ## Features
 
@@ -27,10 +50,23 @@ In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different sni
 
 Trigger | Description
 --- | ---
-b5-**$** | Shortcut for bootstrap cdn css & js files
-**!**b5-**$** | Shortcut creating an html document with cdn scripts included
-**!**b5-**$**-layout-name | Common layouts (coming soon).
-**!**b5-**$**-marketing | Shortcut creating a marketing template (soon).
+b5-$ | Shortcut for bootstrap cdn css & js files
+!b5-$ | Shortcut creating an html document with cdn scripts included
+!b5-$Offcanvas | Offcanvas Template, one tab away.
+!b5-$-NavBottom | navbar-bottom Template, one tab away.
+!b5$Template-name | More coming soon... if [requested](https://github.com/HansUXdev/B5-Snippets/issues/1) or [sponsored](https://github.com/sponsors/HansUXdev/).
+
+---
+
+#### **Powerful Utility Classes**
+
+Trigger | Description
+--- | ---
+b5-**text** | select the element type, `${1|div,p,h1|}`, responsive positions, `text-{|options|}-${|left,center,right|}`, line-height, font-weight and more!
+b5-**border** | change border attributes all border attributes.
+b5-**spacing** | A single, powerful utility snippet. [Read about them](https://v5.getbootstrap.com/docs/5.0/utilities/spacing/).
+
+---
 
 #### Grid
 
@@ -124,33 +160,8 @@ Trigger | Description
 --- | ---
 b5-collaps | supports both single and multiple ta
 
-#### Utility Classes
 
-Trigger | Description
---- | ---
-b5-**text** | select the element type and style your font.
-b5-**border** | change border attributes: `border${1| ,-0,-top,-right,-bottom,-left,-top-0,-right-0,-bottom-0,-left-0|}
-${2|white,primary,secondary,success,danger,warning,info,light,dark|}
-${3|rounded,rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,rounded-pill|}
-${4|rounded-sm,rounded-lg|}`
 
-## Todo
-- [ ] Flex
-- [x] Breadcrumb
-- [x] Alert
-- [x] Badge
-- [x] Typography
-- [x] Button group
-- [x] Pagination
-- [ ] Nav
-- [ ] Form
-- [ ] Media
-- [ ] Figure
-- [ ] List
-- [x] Tooltip
-- [ ] Popover
-- [x] Modal
-- [ ] Dropdown
 
 
 <!-- ## Requirements

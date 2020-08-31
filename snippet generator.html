@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0592)https://snippet-generator.app/?description=Progress+Bar&tabtrigger=b5-progress&snippet=%3Cdiv+class%3D%22progress%22%3E%0A++++%3Cdiv+class%3D%22progress-bar++bg-%24%7B1%3Aprimary%7Csecondary%7Csuccess%7Cdanger%7Cwarning%7Cinfo%7Clight%7Cdark%7D%22+role%3D%22progressbar%22+style%3D%22width%3A+%24%7B2%7C25%2C50%2C75%2C100%2C+%7C%7D%25%3B%22%0A++++++++aria-valuenow%3D%22%24%7B2%7C+%2C25%2C50%2C75%2C100%7C%7D%22+aria-valuemin%3D%22%24%7B3%3A0%7D%22+aria-valuemax%3D%22%24%7B4%3A100%7D%22+%24%7B5%7C+%2Cprogress-bar-animated%7D%3E%24%7B6%3ADescription%7D%3C%2Fdiv%3E%0A%3C%2Fdiv%3E&mode=vscode -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pawel Grzybek - https://pawelgrzybek.com">
+
+    <title>snippet generator</title>
+    <meta name="description" content="Snippet generator for Visual Studio Code, Sublime Text and Atom. Enjoy :-)">
+
+    <!-- Open graph data -->
+    <meta property="og:site_name" content="snippet generator">
+    <meta property="og:title" content="snippet generator">
+    <meta property="og:url" content="/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Snippet generator for Visual Studio Code, Sublime Text and Atom. Enjoy :-)">
+    <meta property="og:image" content="https://snippet-generator.app/snippet-generator.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@pawelgrzybek">
+    <meta name="twitter:creator" content="@pawelgrzybek">
+    <meta name="twitter:title" content="snippet generator">
+    <meta name="twitter:description" content="Snippet generator for Visual Studio Code, Sublime Text and Atom. Enjoy :-)">
+    <meta property="og:image" content="https://snippet-generator.app/snippet-generator.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="https://snippet-generator.app/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://snippet-generator.app/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="https://snippet-generator.app/favicon.ico">
+  <style>@media print {#ghostery-purple-box {display:none !important}}</style><style type="text/css">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* stylelint-disable */
+  font-smoothing: antialiased;
+  /* stylelint-enable */
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+/* app */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 8px;
+  transition: background-color 140ms;
+}
+
+.app--vscode {
+  background-color: #006eb4;
+}
+
+.app--sublimetext {
+  background-color: #4b4b4b;
+}
+
+.app--atom {
+  background-color: #40a977;
+}
+
+@media screen and (min-width: 960px) {
+  .app {
+    height: 100vh;
+    padding: 32px;
+  }
+}
+
+.app__header {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 1440px;
+  margin-bottom: 8px;
+  padding: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .app__header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+}
+
+.app__title {
+  font-size: 18px;
+}
+
+.app__subtitle {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.app__link {
+  color: inherit;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media screen and (min-width: 960px) {
+  .app__main {
+    flex-direction: row;
+  }
+}
+
+.app__half {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, .75);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 960px) {
+  .app__half {
+    width: 50%;
+  }
+}
+
+.app__halftop {
+  display: flex;
+  flex-basis: 64px;
+  flex-shrink: 0;
+  padding: 2px;
+}
+
+.app__input {
+  flex: 1;
+  width: 100%;
+  margin: 2px;
+  padding: 0 16px;
+  transition: box-shadow 140ms;
+  border: 0;
+  border-radius: 2px;
+  outline: none;
+  background-color: #fff;
+  font: inherit;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .25);
+}
+
+.app--vscode .app__input:focus {
+  box-shadow: inset 0 0 0 1px #006eb4;
+}
+
+.app--sublimetext .app__input:focus {
+  box-shadow: inset 0 0 0 1px #4b4b4b;
+}
+
+.app--atom .app__input:focus {
+  box-shadow: inset 0 0 0 1px #40a977;
+}
+
+.app__halfbottom {
+  display: flex;
+  position: relative;
+  flex: 1;
+  min-height: 160px;
+  padding: 0 4px 4px;
+  overflow: hidden;
+}
+
+.app__textarea {
+  display: flex;
+  flex: 1;
+  padding: 16px;
+  transition: box-shadow 140ms;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: #fff;
+  font: inherit;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .25);
+  resize: none;
+}
+
+.app--vscode .app__textarea:focus {
+  box-shadow: inset 0 0 0 1px #006eb4;
+}
+
+.app--sublimetext .app__textarea:focus {
+  box-shadow: inset 0 0 0 1px #4b4b4b;
+}
+
+.app--atom .app__textarea:focus {
+  box-shadow: inset 0 0 0 1px #40a977;
+}
+
+.app__info {
+  display: none;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 960px) {
+  .app__info {
+    display: block;
+  }
+}
+
+.app__infoselect {
+  transition: color 140ms;
+  /* stylelint-disable */
+  -moz-user-select: all;
+  -ms-user-select: all;
+  -webkit-user-select: all;
+  /* stylelint-enable */
+  user-select: all;
+}
+
+.app--vscode .app__infolink {
+  color: #006eb4;
+}
+
+.app--sublimetext .app__infolink {
+  color: #4b4b4b;
+}
+
+.app--atom .app__infolink {
+  color: #40a977;
+}
+
+/* btn */
+
+.app__button {
+  flex: 1;
+  margin: 2px;
+  padding: 0 16px;
+  transition: background-color 140ms;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  background-color: rgba(0, 0, 0, .25);
+  color: #fff;
+  font: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.app__button--vscode.app__button--active {
+  background-color: #006eb4;
+}
+
+.app__button--sublimetext.app__button--active {
+  background-color: #4b4b4b;
+}
+
+.app__button--atom.app__button--active {
+  background-color: #40a977;
+}
+
+.app__pre {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  font: inherit;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .25);
+  overflow: auto;
+  resize: none;
+  /* stylelint-disable */
+  -moz-user-select: all;
+  -ms-user-select: all;
+  -webkit-user-select: all;
+  /* stylelint-enable */
+  user-select: all;
+}
+
+.app__btn {
+  padding: 0 16px;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  font: inherit;
+  line-height: 56px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.app--vscode .app__btn {
+  background-color: #006eb4;
+}
+
+.app--sublimetext .app__btn {
+  background-color: #4b4b4b;
+}
+
+.app--atom .app__btn {
+  background-color: #40a977;
+}
+
+.app__buttons {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+</style></head>
+  <body>
+    <div id="app"><div class="app app--vscode"><div class="app__header"><h1 class="app__title">snippet generator</h1><p class="app__subtitle">Made by <a class="app__link" href="https://pawelgrzybek.com/">Pawel Grzybek</a> | Source code on <a class="app__link" href="https://github.com/pawelgrzybek/snippet-generator">GitHub</a> | <a class="app__link" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpawelgrzybek.com%2Fsnippet-generator%2F&amp;text=Snippet%20generator%20for%20VS%20Code%2C%20Sublime%20Text%20and%20Atom&amp;via=pawelgrzybek">Share on Twitter</a> | <a class="app__link" href="https://paypal.me/pools/c/8p6yWl7QVT">Support</a></p></div><div class="app__main"><div class="app__half"><div class="app__halftop"><input type="text" class="app__input" name="description" placeholder="Description…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="Progress Bar"><input type="text" class="app__input" name="tabTrigger" placeholder="Tab trigger…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="b5-progress"></div><div class="app__halfbottom"><textarea class="app__textarea" name="snippet" placeholder="Your snippet…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" wrap="off">&lt;div class="progress"&gt;
+    &lt;div class="progress-bar  bg-${1:primary|secondary|success|danger|warning|info|light|dark}" role="progressbar" style="width: ${2|25,50,75,100, |}%;"
+        aria-valuenow="${2| ,25,50,75,100|}" aria-valuemin="${3:0}" aria-valuemax="${4:100}" ${5| ,progress-bar-animated}&gt;${6:Description}&lt;/div&gt;
+&lt;/div&gt;</textarea><p class="app__info">To declare a placeholder (⌘ + i): <span class="app__infoselect">${1:example}</span> | <a class="app__infolink" href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" target="_blank" rel="noopener noreferrer">More info</a></p></div></div><div class="app__half"><div class="app__halftop"><button class="app__button app__button--vscode app__button--active">VSCode</button><button class="app__button app__button--sublimetext">Sublime Text</button><button class="app__button app__button--atom">Atom</button></div><div class="app__halfbottom"><pre class="app__pre">"Progress Bar": {
+  "prefix": "b5-progress",
+  "body": [
+    "&lt;div class=\"progress\"&gt;",
+    "    &lt;div class=\"progress-bar  bg-${1:primary|secondary|success|danger|warning|info|light|dark}\" role=\"progressbar\" style=\"width: ${2|25,50,75,100, |}%;\"",
+    "        aria-valuenow=\"${2| ,25,50,75,100|}\" aria-valuemin=\"${3:0}\" aria-valuemax=\"${4:100}\" ${5| ,progress-bar-animated}&gt;${6:Description}&lt;/div&gt;",
+    "&lt;/div&gt;"
+  ],
+  "description": "Progress Bar"
+}</pre><div class="app__buttons"><button class="app__btn app__btncopy" data-clipboard-target=".app__pre">Copy snippet</button></div></div></div></div></div></div>
+  <script type="text/javascript" src="./snippet generator_files/main.js"></script>
+
+</body></html>
