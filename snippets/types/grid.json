@@ -2,7 +2,7 @@
     "Bootstrap 5 container": {
         "prefix": "b5-contain",
         "body": [
-            "<div class=\"container${1|-fluid, ,-sm,-md,-lg,-xl,-xxl|}${2| ,overflow-hidden|} ${3|px-1,px-2,px-3,px-4,px-5|} ${4|gy-1,gy-2,gy-3,gy-4,gy-5|}\">",
+            "<div class=\"container${1|-fluid, ,-sm,-md,-lg,-xl,-xxl|}${2| ,overflow-hidden|} ${3|!pm,!shadow,!color,!font|}\">",
             "b5-row${0}",
             "</div>"
         ],
@@ -21,7 +21,7 @@
         "prefix": "b5-col",
         "body": [
             "  <div class=\"col${1| ,-1,-2,-3,-4,-5,-6,-sm,-md,-lg,-xl,-xxl|}${2| ,-auto,-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12|}\">",
-            "    b5${0}",
+            "    b5-col${0}",
             "  </div>"
         ],
         "description": "Bootstrap 5 col"

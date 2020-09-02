@@ -1,10 +1,10 @@
 {
     "Padding / Margin":{
-       "prefix":"!pm",
+       "prefix":"!spacing",
        "body":[
           "${1|m,p|}${3|t,r,b,l,x,y|}-${4|auto,0,1,2,3,4,5|}"
        ],
-       "description":"Quickly add padding & margins any class."
+       "description":"Quickly add Padding & Margins any class."
     },
     "Color":{
        "prefix":"!color",
@@ -62,7 +62,7 @@
     "Utility Spacing":{
        "prefix":"b5-Spacing",
        "body":[
-          "<${1|div,p,h1|} class=\"${2|m,p|}${3|t,r,b,l,x,y|}${3|auto,0,1,2,3,4,5|} \">",
+          "<${1|div,p,h1|} class=\"${2|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|} \">",
           "${0}",
           "</${1|div,p,h1|}>"
        ],
