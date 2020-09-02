@@ -89,5 +89,22 @@
             "</nav>"
         ],
         "description": "Nav Bottom"
+    },
+    "Scrollspy": {
+        "prefix": "b5-scrollspy",
+        "body": [
+            "<nav id=\"${1:navbar-example2}\" class=\"navbar navbar-light bg-light px-3\">",
+            "    <a class=\"navbar-brand\" href=\"#\">Navbar</a>",
+            "    <ul class=\"nav nav-pills\">",
+            "        <li class=\"nav-item\">",
+            "            <a class=\"nav-link\" href=\"#${2:fat}\">@fat</a>",
+            "        </li>",
+            "    </ul>",
+            "</nav>",
+            "<div data-spy=\"scroll\" data-target=\"#${1:navbar-example2}\" data-offset=\"0\">",
+            "    <h4 id=\"${2:fat}\">@fat</h4>",
+            "</div>",
+        ],
+        "description": "Scrollspy"
     }
 }
