@@ -17,9 +17,9 @@
     "json-concat": "^0.0.1"
   },
   "scripts": {
-    "concat": "node_modules\\.bin\\json-concat snippets/types/ snippets/snippets.json",
+    "concat": "node_modules\\.bin\\json-concat snippets/types/*.json snippets/snippets.json",
     "package": "npx vsce package",
-    "snip": "code --install-extension javascript-first-snippets-0.0.2.vsix",
+    "snip": "code --install-extension bootstrap5-snippets-1.2.2.vsix",
     "test": "npx vsce package && npm run snip",
     "publish": ""
   },
@@ -36,91 +36,91 @@
     "snippets": [
       {
         "language": "blade",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "ejs",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "html",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "handlebars",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "latte",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "php",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "plaintext",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "razor",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "tpl",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "twig",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "vue",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "vue-html",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "django-html",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "jinja-html",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "erb",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "HTML (Eex)",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "volt",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       },
       {
         "language": "nunjucks",
-        "path": "./snippets.json"
+        "path": "./snippets/bootstrap.json"
       }
     ]
   }

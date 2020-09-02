@@ -1,38 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Blog Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/blog/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style>
+        /* stylelint-disable selector-list-comma-newline-after */
+
+        .blog-header {
+            line-height: 1;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .blog-header-logo {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+            font-size: 2.25rem;
+        }
+
+        .blog-header-logo:hover {
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+
+        .display-4 {
+            font-size: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .display-4 {
+                font-size: 3rem;
+            }
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-scroller .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+        }
+
+        .card-img-right {
+            height: 100%;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .flex-auto {
+            flex: 0 0 auto;
+        }
+
+        .h-250 {
+            height: 250px;
+        }
+
+        @media (min-width: 768px) {
+            .h-md-250 {
+                height: 250px;
+            }
+        }
+
+        /* Pagination */
+        .blog-pagination {
+            margin-bottom: 4rem;
+        }
+
+        .blog-pagination>.btn {
+            border-radius: 2rem;
+        }
+
+        /*
+        * Blog posts
+        */
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
+        }
+
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #727272;
+        }
+
+        /*
+        * Footer
+        */
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #727272;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: .05rem solid #e5e5e5;
+        }
+
+        .blog-footer p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-    <img src="https://hansmcmurdy.com/JavaScript-First/logo.svg" width="30" height="30" alt="" loading="lazy">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="test" aria-controls="test"  aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="test">
-      <div class="navbar-nav">
-        <a class="nav-link"  aria-disabled="false" href="#">Home</a>
-        
-      </div>
+    <nav id="scrollspy-demo" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Utility">Snippets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="home" href="#Layouts">Templates</a>
+            </li>
+        </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#scrollspy-demo" data-offset="0">
+        <div class="container">
+            <header class="blog-header py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4 pt-1">
+                        <!-- <a class="link-secondary" href="#">Subscribe</a> -->
+                    </div>
+                    <div class="col-4 text-center">
+                        <a class="blog-header-logo text-dark" href="#">Bootstrap 5 Snippets</a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 font-italic">About the Snippets</h1>
+                    <p class="lead my-3">The first, (currently only) and hands down BEST bootstrap 5 snippet extension.
+                        Includes templates, powerful utility snippets, and much more..</p>
+                    <p class="text-center lh-lg font-italic text-decoration-line-none text-reset">
+                        Still in Alpha... But powerful...
+                    </p>
+                    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static " id="Utility">
+                            <strong class="d-inline-block mb-2 text-primary">Utility</strong>
+                            <h3 class="mb-0">Powerful Utility Snippets</h3>
+                            <div class="mb-1 text-muted">Sept 2</div>
+                            <div class="text-sm-left lh-sm font-normal text-decoration-none text-reset">
+                                <code>bf5-text</code> - Create the desired element then selection options. Or use <code
+                                    class=" ">!font</code> and edit the classes of any HTML element.
+                            </div>
+                            <a href="#" class="stretched-link">Watch Demo</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                                focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">Templates one tab away</h3>
+                            <div class="mb-1 text-muted">Sept 2</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                                additional content.</p>
+                            <a href="#" class="stretched-link">Watch Demo</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                                focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static ">
+                            <strong class="d-inline-block mb-2 text-primary">Components</strong>
+                            <h3 class="mb-0">Powerful Components Snippets</h3>
+                            <div class="mb-1 text-muted">Sept 2</div>
+                            <div class="text-sm-left lh-sm font-normal text-decoration-none text-reset">
+                                Each component uses <code>bf5-</code> as the prefix.
+                            </div>
+                            <p class="text-center lh-lg font-italic text-decoration-line-none text-reset">
+                                b5-
+                                Some of them still need a bit more work but it is still an Alpha... But powerful...
+                            </p>
+                            <a href="#" class="stretched-link">Watch Demo</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                                focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Design</strong>
+                            <h3 class="mb-0">Navbars</h3>
+                            <div class="mb-1 text-muted">Sept 2</div>
+                            <!-- <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                                additional content.</p> -->
+                                <div class="text-sm-left lh-sm font-normal text-decoration-none text-reset">
+                                    Each component uses <code>bf5-navbar</code> as the prefix.
+                                </div>
+                                <p class="text-center lh-lg font-italic text-decoration-line-none text-reset">
+                                    <code>b5-navbar-default</code> - Full default nav
+                                    <br>
+                                    <code>b5-scrollspy</code> - Full scrollspy nav.
+                                    <br>
+                                    <code>b5-Nav-bottom</code>
+                                    <br>
+                                    <code>b5-nav-item</code>
+                                    <br>
+                                    <code>b5-nav-link</code>
+                                    <br>
+                                    <code>b5-navdropdown</code>
+                                    <br>
+                                    <code>b5-navdd-toggle</code>
+                                    <br>
+                                    <!-- <code>b5-</code> -->
+                                    More on the way... but remember, still an Alpha... 
+                                </p>
+                            <a href="#" class="stretched-link">Watch Demo</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img"
+                                focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                                    dy=".3em">Thumbnail</text>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
+    <main class="container" id="Layouts">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="pb-4 mb-4 font-italic border-bottom">
+                    Templates & Layouts
+                </h3>
+                <div class="text-sm-center lh-sm font-italic text- text-decoration-none text-reset mb-3">
+                Demo Here... 
+                <div class="container  ">
+                <div class="row shadow  bg-light p-3 m-3 ">
+                Paper Content
+                </div>
+                <div class="container ">
+                <div class="row row-cols-2">
+                  <div class="col  shadow  bg-light py-3">
+                    b5
+                  </div>
+                    <div class="col  shadow  bg-light py-3">
+                      b5
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+
+
+        </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
+                href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+
 
 </body>
-</html>
 
+</html>
