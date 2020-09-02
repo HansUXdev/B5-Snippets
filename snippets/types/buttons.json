@@ -1,0 +1,34 @@
+{
+    "Link BTN": {
+        "prefix": "b5-btn",
+        "body": [
+            "<a class=\"btn btn-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+        ],
+        "description": "Link BTN"
+    },
+    "BTN-Outline": {
+        "prefix": "b5-btn-o",
+        "body": [
+            "<a class=\"btn btn-outline-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+        ],
+        "description": "Link BTN"
+    },
+    "Close Button": {
+        "prefix": "b5-btn-close",
+        "body": [
+            "<button type=\"button\" class=\"close\" ${1:| ,disabled|} aria-label=\"Close\">",
+            "  <span aria-hidden=\"true\">&times;</span>",
+            "</button>"
+        ],
+        "description": "Close Button"
+    },
+    "Button Group": {
+        "prefix": "b5-btn-gp",
+        "body": [
+            "<div class=\"btn-group ${2| ,btn-group-vertical,btn-group-sm,btn-group-lg,h1|} ${3|m,p|}${4|t,r,b,l,x,y|}${5|auto,0,1,2,3,4,5|}\" role=\"group\" aria-label=\"${1:Basic example}\">",
+            "    b5-btn${0}",
+            "</div>"
+        ],
+        "description": "Button Group"
+    }
+}

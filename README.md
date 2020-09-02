@@ -11,7 +11,21 @@ This may surprizes you but VS Code and it's marketplace isn't really open source
 
 This extension is built for [open-vsx](https://open-vsx.org/) and published on the ONLY [open source registry](https://open-vsx.org/about) for VS Code extensions.
 
-<!-- **Eventually, this extension may be removed from [visual studio marketplace](https://marketplace.visualstudio.com/) in order raise awareness**. -->
+<!-- 
+If you are reading this, it's because I opened sourced it. Hopefully you love open source as much as me...
+
+Don't share this code comment with anyone. It'll be our little inside joke.
+
+Wanna conduct an expirment together?
+1. Give this extension 5 stars. Write an awesome review.
+2. Share it and promote it on social media, twitter, facebook, linkedin, etc... 
+3. Lets see if we can get ~20-100k downloads.
+4. Just as people are getting hooked, I'll uncomment the text below. 
+    Then remove the extension from the stor at a random time to raise awareness about open source.
+    If you are a publisher of an extension, or snippet, you do the same thing.
+-->
+
+<!-- **Eventually, this extension may be removed from [visual studio marketplace](https://marketplace.visualstudio.com/) in order raise awareness**.  -->
 
 Learn more about **open source** versions of vscode such as [vscodium](https://vscodium.com/), [GitPod's IDE](https://www.gitpod.io/docs/ide/) and more.
 <!-- 
@@ -210,11 +224,14 @@ Trigger | Description & Info
 [JavaScript-First](https://github.com/HansUXdev/JavaScript-First) | An Open Source Book that teaches anyone how to code with JavaScript using the node.js runtime environment rather than a browser and by the end, you will build a server and a website using JavaScript..
 [Learn Mongo GitPod](https://github.com/HansUXdev/LearnMongoGitPod)| A repo designed to teach mongoDB to people with zero experiance and zero config, meaning you can learn on virtually any device that has a browser that GitPod can run on! This 🤞may🤞 become part of Free Code Camp [[1](https://forum.freecodecamp.org/t/how-is-new-content-created-at-fcc/416191/3)], [[2](https://github.com/freeCodeCamp/CurriculumExpansion/issues/103)].
 
+
 ### Future Snippets & Extensions
 Name | Description
 --- | ---
+[JavaScript-First]()  | JavaScript First is a huge collection of snippets useful for working with JS--based servers, browsers, databases and more. It is also meant to be paired with the book, [JavaScript-First](https://github.com/HansUXdev/JavaScript-First).
+Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for.
 Code Slides | A snippet extension for creating educational slides with [vscode-reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) and a custom theme. (not public yet)
-Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for [email](https://get.foundation/emails). If sponsored, I will extend this to eventually replace the [CLI](https://github.com/foundation/foundation-cli) and [building blocks](https://get.foundation/building-blocks/) by implementing a custom feature that writes install kits in a similar way the [web boilerplate](https://marketplace.visualstudio.com/items?itemName=jamesqquick.web-boilerplate) writes an html, css, and js file.  (not started yet)
+Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for.[email](https://get.foundation/emails). If sponsored, I will extend this to eventually replace the [CLI](https://github.com/foundation/foundation-cli) and [building blocks](https://get.foundation/building-blocks/) by implementing a custom feature that writes install kits in a similar way the [web boilerplate](https://marketplace.visualstudio.com/items?itemName=jamesqquick.web-boilerplate) writes an html, css, and js file.  (not started yet)
 
 ### Social Entrepreneurship: Open Source Non-Profit
 I'm in the process of founding a non-profit dedicated to promoting open source by doing the following and can only commit to the first two without proper sponsorship:

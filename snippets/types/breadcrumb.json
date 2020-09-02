@@ -1,0 +1,13 @@
+{
+    "breadcrumb": {
+        "prefix": "b5-breadcrumb",
+        "body": [
+            "<${1:nav} class=\"breadcrumb\" aria-label=\"breadcrumb\">",
+            "  <${2:ol}>",
+            "  <li class=\"${3|breadcrumb-item|, breadcrumb-item active}\"><a href=\"${5}\">${6:Library}</a></li>",
+            "  </${2:ol|}>",
+            "</${1:nav}>"
+        ],
+        "description": "breadcrumb"
+    }
+}

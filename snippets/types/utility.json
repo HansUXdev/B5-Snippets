@@ -1,0 +1,71 @@
+{
+    "Padding / Margin": {
+        "prefix": "!pm",
+        "body": [
+            "${1|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|}"
+        ],
+        "description": "Quickly add padding & margins any class."
+    },
+	"Color": {
+        "prefix": "!color",
+        "body": [
+            "${2|text,bg|}-${3|primary,secondary,success,danger,warning,info,light,dark|}"
+        ],
+        "description": "Quickly add color utility classes to any class."
+    },
+	"Font": {
+		"prefix": "!font",
+		"body": [
+			"text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|italic,normal,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}",
+		],
+		"description": "Quickly add font utility classes to any class."
+	},
+    "Shadow": {
+        "prefix": "!shadow",
+        "body": [
+            "shadow${1| ,-sm,-lg|} bg-${2|white,light,dark,primary,secondary,success,danger,warning,info|} ${3|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|}"
+        ],
+        "description": "Add shadow to any class"
+    },
+    "Utility Paper Shadow": {
+        "prefix": "b5-shadow",
+        "body": [
+            "<div class=\"shadow${1| ,-sm,-lg|} p-3 mb-5 bg-${2|primary,secondary,success,danger,warning,info,light,dark|} ${3|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|}\">${0}</div>"
+        ],
+        "description": "Utility Paper Shadow"
+    },
+    "Utility Color": {
+        "prefix": "b5-color",
+        "body": [
+            "${2|text,bg|}${3|primary,secondary,success,danger,warning,info,light,dark|}"
+        ],
+        "description": "Text Utility"
+    },
+    "Utility Text": {
+        "prefix": "b5-txt",
+        "body": [
+            "<${1|div,p,h1|} class=\"text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|italic,normal,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}\">",
+            "${9:Left aligned text on all viewport sizes.}",
+            "</${1|div,p,h1|}>"
+        ],
+        "description": "Text Utility"
+    },
+    "Utility Borders": {
+        "prefix": "b5-borders",
+        "body": [
+            "<${1|div,p,h1|} class=\"border${1| ,-0,-top,-right,-bottom,-left,-top-0,-right-0,-bottom-0,-left-0|} border-${2|white,primary,secondary,success,danger,warning,info,light,dark|} ${3| ,rounded,rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,rounded-pill|} ${4| ,rounded-sm,rounded-lg|}\">",
+            "${10:Left aligned text on all viewport sizes.}",
+            "</${1|div,p,h1|}>"
+        ],
+        "description": "Utility Borders"
+    },
+    "Utility Spacing": {
+        "prefix": "b5-Spacing",
+        "body": [
+            "<${1|div,p,h1|} class=\"${2|m,p|}${3|t,r,b,l,x,y|}${3|auto,0,1,2,3,4,5|} \">",
+            "${0}",
+            "</${1|div,p,h1|}>"
+        ],
+        "description": "Utility Spacing"
+    }
+}

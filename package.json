@@ -1,7 +1,7 @@
 {
   "name": "bootstrap5-snippets",
   "description": "Code snippets for Bootstrap 5 ",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "displayName": "Bootstrap 5 Snippets",
   "publisher": "HansUXdev",
   "icon": "bootstrap.png",
@@ -12,6 +12,16 @@
   },
   "engines": {
     "vscode": "0.10.x"
+  },
+  "devDependencies": {
+    "json-concat": "^0.0.1"
+  },
+  "scripts": {
+    "concat": "node_modules\\.bin\\json-concat snippets/types/ snippets/snippets.json",
+    "package": "npx vsce package",
+    "snip": "code --install-extension javascript-first-snippets-0.0.2.vsix",
+    "test": "npx vsce package && npm run snip",
+    "publish": ""
   },
   "categories": [
     "Snippets"
