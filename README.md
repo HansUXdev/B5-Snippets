@@ -35,7 +35,7 @@ The simplest way is to install command line.
 ## Templates one tab away!
 More coming soon...
 
-![](Templates.gif)
+![](Templates2.gif)
 
 ## Notes
 Bootstrap 5 is currently in alpha and this extension does not implement all the component yet (see the todo list below).
@@ -48,18 +48,6 @@ In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different sni
 * v1.5 - Each snippet with eventually have a gif demo (soon).
 * v2 - All base [templates](https://v5.getbootstrap.com/docs/5.0/examples/) and several others will be one tab away, so consider  [sponsoring this](https://github.com/sponsors/HansUXdev/) or giving it a star.
 
-
-## Todo
-- [ ] Flex Utility
-- [ ] Nav
-- [ ] Navbar
-- [ ] ScrollSpy
-- [ ] Form
-- [ ] Media
-- [ ] Figure
-- [ ] List
-- [ ] Popover
-- [ ] Dropdown
 
 ## Features
 

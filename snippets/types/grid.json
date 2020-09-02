@@ -2,7 +2,7 @@
     "Bootstrap 5 container": {
         "prefix": "b5-contain",
         "body": [
-            "<div class=\"container${1|-fluid, ,-sm,-md,-lg,-xl,-xxl|}${2| ,overflow-hidden|} ${3|!pm,!shadow,!color,!font|}\">",
+            "<div class=\"container${1|-fluid, ,-sm,-md,-lg,-xl,-xxl|}${2| ,overflow-hidden|} ${3|!spacing,!shadow,!color,!font|}\">",
             "b5-row${0}",
             "</div>"
         ],
