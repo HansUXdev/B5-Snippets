@@ -2,7 +2,7 @@
     "Padding / Margin":{
        "prefix":"!spacing",
        "body":[
-          "${1|m,p|}${3|t,r,b,l,x,y|}-${4|auto,0,1,2,3,4,5|}"
+          "${1|m,p|}${3|x,y,t,r,b,l|}-${4|auto,0,1,2,3,4,5|}"
        ],
        "description":"Quickly add Padding & Margins any class."
     },
@@ -44,7 +44,7 @@
     "Utility Text":{
        "prefix":"b5-txt",
        "body":[
-          "<${1|div,p,h1|} class=\"text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|normal,italic,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}\">",
+          "<${1|div,p,h1|} class=\"text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|normal,italic,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|none,lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}\">",
           "${9:Left aligned text on all viewport sizes.}",
           "</${1|div,p,h1|}>"
        ],
@@ -60,7 +60,7 @@
        "description":"Utility Borders"
     },
     "Utility Spacing":{
-       "prefix":"b5-Spacing",
+       "prefix":"b5-spacing",
        "body":[
           "<${1|div,p,h1|} class=\"${2|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|} \">",
           "${0}",

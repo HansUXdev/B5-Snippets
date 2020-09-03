@@ -1,13 +1,26 @@
 # Bootstrap 5 
+[![Version](https://vsmarketplacebadge.apphb.com/version/HansUXdev.bootstrap5-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/HansUXdev.bootstrap5-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/HansUXdev.bootstrap5-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets)
+
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT) [![GitHub](https://img.shields.io/github/stars/HansUXdev/B5-Snippets.svg?style=flat-square)](https://github.com/HansUXdev/B5-Snippets) [![GitHub](https://img.shields.io/github/followers/HansUXdev.svg?style=flat-square)](https://github.com/HansUXdev)
+
+
 
 <!-- [![GitHub](https://img.shields.io/github/release/HansUXdev/B5-Snippets.svg?style=flat-square)](https://github.com/HansUXdev/B5-Snippets/releases) -->
 
 The first, (currently only) and hands down BEST bootstrap 5 snippet extension. Includes templates, powerful utility snippets, and much more.
 
+## Features
+1. Templates one tab away
+2. Powerful utilities
+3. Much more planned, so consider giving it a star on [github](https://github.com/HansUXdev/B5-Snippets) or the [marketplace](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets), becoming a [sponsor](https://github.com/sponsors/HansUXdev/).
+
+![](Templates2.gif)
+
 
 # Open Source Marketplace
-This may surprizes you but VS Code and it's marketplace isn't really open source and is licensed under a not-FLOSS license and contains telemetry/tracking, [read more...](https://vscodium.com/)
+This may surprizes you but VS-Code and it's marketplace aren't really open source, is licensed under a not-FLOSS license and contains telemetry/tracking, [read more...](https://vscodium.com/)
 
 This extension is built for [open-vsx](https://open-vsx.org/) and published on the ONLY [open source registry](https://open-vsx.org/about) for VS Code extensions.
 
@@ -32,14 +45,9 @@ Learn more about **open source** versions of vscode such as [vscodium](https://v
 ## Installing
 The simplest way is to install command line.
 `code --install-extension myextension.vsix` -->
-## Templates one tab away!
-More coming soon...
-
-![](Templates2.gif)
 
 ## Notes
-Bootstrap 5 is currently in alpha and this extension does not implement all the component yet (see the todo list below).
-
+Bootstrap 5 is currently in alpha and this extension should be considered in the same status.
 Unlike a lot of other snippets, this extension aims to balence user simplicity, with power and flexibility by keeping the **total number of snippets to a minimum**. 
 
 In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different snippets for the grid, whereas this will have 3, but each is more powerful.
@@ -49,31 +57,37 @@ In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different sni
 * v2 - All base [templates](https://v5.getbootstrap.com/docs/5.0/examples/) and several others will be one tab away, so consider  [sponsoring this](https://github.com/sponsors/HansUXdev/) or giving it a star.
 
 
-## Features
 
-#### Templates/Layout
+## Templates/Layout
+Templates are just one tab away. Most of the [official example templates](https://v5.getbootstrap.com/docs/5.0/examples/) have been implmented.
 
 Trigger | Description
 --- | ---
 b5-$ | Shortcut for bootstrap cdn css & js files
 !b5-$ | Shortcut creating an html document with cdn scripts included
 !b5-$Offcanvas | Offcanvas Template, one tab away.
-!b5-$-NavBottom | navbar-bottom Template, one tab away.
-!b5$Template-name | More coming soon... if [requested](https://github.com/HansUXdev/B5-Snippets/issues/1) or [sponsored](https://github.com/sponsors/HansUXdev/).
+!b5$Template-name | More coming soon... 
 
 ---
 
 #### **Powerful Utility Classes**
+There are two way to use utilities.
+1. **Class utilities**, which use `!` as a prefix. For example, if you want to add a utility class to an existing HTML element, inside of `class=" "` you would add `class="!spacing"` then hit tab and fill out the options, the default will be `class="mx-auto"` which sets margin to auto on left and right (x).
+2. **Wrapper elements**, ex: `b5-{txt,color,shadow,boder,spacing}` which will create a div, p, h2 then allow you to tab through the options. 
 
 Trigger | Description
 --- | ---
-b5-**text** | select the element type, `${1|div,p,h1|}`, responsive positions, `text-{|options|}-${|left,center,right|}`, line-height, font-weight and more!
-b5-**border** | change border attributes all border attributes.
-b5-**spacing** | A single, powerful utility snippet. [Read about them](https://v5.getbootstrap.com/docs/5.0/utilities/spacing/).
+`!spacing` or `b5-spacing` | A single, powerful utility snippet. The default is `mx-auto` which adds margins on right and left. The options allow you to switch between (m)argin and (p)adding, x,y,(t)op,(r)ight, (b)ottom, (l)eft, etc. Read about the classes on the [official bootstrap documentation](https://v5.getbootstrap.com/docs/5.0/utilities/spacing/).
+`!shadow` or `b5-shadow` | Useful whenever you want to make things look like paper or material design. Read about the classes on the [official bootstrap documentation](https://v5.getbootstrap.com/docs/5.0/utilities/spacing/). https://v5.getbootstrap.com/docs/5.0/utilities/shadows/
+`!font` or `b5-text` | This intentionally uses two different names to differentiate between the class utility and the wrapper element. The options are responsive positions `{|sm,md,lg,xl|}-${|left,center,right|}`, line-height `base,1,sm,lg}`, font-weight `normal,italic,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter` ,and `text-${6|none,lowercase,uppercase,capitalize|}`, decoration and `reset,break,monospace` !
+`b5-border` | change border attributes all border attributes. Read about the classes on the [official bootstrap documentation](https://v5.getbootstrap.com/docs/5.0/utilities/borders/).
+
 
 ---
 
 #### Grid
+This is works great but it may be simplified and rewritten. 
+I'm also toying around with new utility snippet to that combines the [display classes](https://v5.getbootstrap.com/docs/5.0/utilities/display/) and [flex classes](https://v5.getbootstrap.com/docs/5.0/utilities/flex/). If you have any thoughts or suggestions, let me know on github.
 
 Trigger | Description
 --- | ---
@@ -86,13 +100,14 @@ b5-**col** | Pretty much all your need covered and more. Ex: `col${1| ,-1,-2,-3,
 Trigger | Description
 --- | ---
 b5-**navbar-default** | Navbar default
+b5-**navbar-scollspy** | V1 is here
+b5-**Nav-bottom** | V1 is here
+
 b5-**nav-item** | item with link and options for common pages such as Home, About, Blog, Contact.
 b5-**navlink** | link
 b5-**nav-dropdown** | dropdown
 b5-**nav-dropdown toggle** | Navbar toggle
-b5-**navbar-scollspy** | coming soon...
-
-
+b5-**nav-** | more in this category coming soon...
 
 #### Button
 
@@ -100,7 +115,40 @@ Trigger | Description
 --- | ---
 b5-**btn** | Button with link
 b5-**btn-o** | Button with outline
-b5-**btn-group** | More buttons coming soon...
+b5-**btn-close** | Close buttons...
+b5-**btn-** | more in this category coming soon...
+
+
+
+#### Cards
+
+Trigger | Description
+--- | ---
+b5-**card** | Basic Card
+b5-**card-** | more in this category coming soon...
+
+
+#### modal
+
+Trigger | Description
+--- | ---
+b5-**modal** | Basic modal
+b5-**modal-** | more in this category coming soon...
+
+#### Collapse
+
+Trigger | Description
+--- | ---
+b5-**btn-reveal** | Click a button and reveal some content.
+b5-**modal-** | more in this category coming soon...
+
+
+#### JavaScript
+I plan on eventually adding bootstrap snippet for the JavaScript but its not on the roadmap yet because I'm also working on this [massive javascript extension](https://marketplace.visualstudio.com/items?itemName=HansUXdev.javascript-first-snippets) which will replace about 5-10 of the most popular extensions add and add things like optional chaining among other methods.
+
+Trigger | Description
+--- | ---
+`jb5` | consider submitting a PR or becoming a [sponsor](https://github.com/sponsors/HansUXdev/).
 
 <!-- #### Bgroup
 Trigger | Description
@@ -125,81 +173,19 @@ b5-**dropdown-split** | Dropdown split
 b5-**dropdown-up-split** | Dropdown up split
 b5-**dropdown-up** | Dropdown up -->
 
-#### Card
-
-Trigger | Description
---- | ---
-b5-**card** | Card
-b5-**card-align** | Card align
-b5-**card-align** | more coming soon...
-
-#### Carousel
-
-Trigger | Description
---- | ---
-b5-**carousel-caption** | Carousel caption
-b5-**carousel-default** | Carousel default
-
-#### Collapse
-
-Trigger | Description
---- | ---
-b5-btn-reveal | Reveals content on click
-b5-**collapse-Multiple** | Collapses multiple targets (soon...)
-
-#### Progress
-
-Trigger | Description
---- | ---
-b5-**progress** | progress bar
-
-#### Breadcrumb
-
-Trigger | Description
---- | ---
-b5-**Breadcrumb** | Breadcrumb
-
-#### Collapse
-
-Trigger | Description
---- | ---
-b5-collaps | supports both single and multiple ta
 
 
-
-
-
-<!-- ## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them. -->
-
-<!-- ## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something -->
-
-## Known Issues
-No serious issue known at the moment.
+<!-- ## Known Issues
+No serious issue known at the moment. -->
 
 ## Release Notes
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0
-
-Initial release of ...
+### 1.2.3 - Updated documentation, added templates and much more.
 
 
-# **Enjoy!**
-
-
-## Supporting Developers 
+## Supporting the Developers 
 If you use this a lot or want to see it improve consider giving it a star or  becoming a [githup sponsor](https://github.com/sponsors/HansUXdev/). 
 
 I author does **a lot more** than just publishing a json file for snippets.
@@ -216,7 +202,7 @@ Trigger | Description & Info
 ### Future Snippets & Extensions
 Name | Description
 --- | ---
-[JavaScript-First]()  | JavaScript First is a huge collection of snippets useful for working with JS--based servers, browsers, databases and more. It is also meant to be paired with the book, [JavaScript-First](https://github.com/HansUXdev/JavaScript-First).
+[JavaScript-First](https://marketplace.visualstudio.com/items?itemName=HansUXdev.javascript-first-snippets)  | JavaScript First is a huge collection of snippets useful for working with JS--based servers, browsers, databases and more. It is also meant to be paired with the book, [JavaScript-First](https://github.com/HansUXdev/JavaScript-First).
 Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for.
 Code Slides | A snippet extension for creating educational slides with [vscode-reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) and a custom theme. (not public yet)
 Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for.[email](https://get.foundation/emails). If sponsored, I will extend this to eventually replace the [CLI](https://github.com/foundation/foundation-cli) and [building blocks](https://get.foundation/building-blocks/) by implementing a custom feature that writes install kits in a similar way the [web boilerplate](https://marketplace.visualstudio.com/items?itemName=jamesqquick.web-boilerplate) writes an html, css, and js file.  (not started yet)
