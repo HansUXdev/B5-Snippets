@@ -14,7 +14,8 @@ The first, (currently only) and hands down BEST bootstrap 5 snippet extension. I
 ## Features
 1. Templates one tab away
 2. Powerful utilities
-3. Much more planned, so consider giving it a star on [github](https://github.com/HansUXdev/B5-Snippets) or the [marketplace](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets), becoming a [sponsor](https://github.com/sponsors/HansUXdev/).
+<!-- 3. 1 hidden snippet to convert ya'll to javascript fans -->
+4. Much more planned, so consider giving it a star on [github](https://github.com/HansUXdev/B5-Snippets) or the [marketplace](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets), becoming a [sponsor](https://github.com/sponsors/HansUXdev/).
 
 ![](Templates2.gif)
 
