@@ -85,39 +85,46 @@
    "Display Utilities:": {
       "prefix": "!display",
       "body": [
-         "d${1|\b,-sm,-md,-lg,-xl,-xxl|}-${2|flex,inline-flex,none,block,inline,inline-block,table,table-cell,table-row|} "
+         "d-${2|flex,inline-flex,none,block,inline,inline-block,table,table-cell,table-row|} "
+      ],
+      "description": "Display Utilities:"
+   },
+   "Utilities MQ:": {
+      "prefix": "!MQ",
+      "body": [
+         "${1|-sm-,-md,-lg-,-xl-,-xxl-|}"
       ],
       "description": "Display Utilities:"
    },
    "Flex Utility": {
       "prefix": "!flex",
       "body": [
-         "d${1|\b-,-sm-,-md-,-lg-,-xl-,-xxl-|}${2|flex,inline-flex|} ${3| ,!direction,!justify,!align|}"
+         "d${1|-,!MQ|}${2|flex,inline-flex|} ${3| ,!direction,!justify,!align,!fill,!grow-shrink,!flex-wrap,!flex-order|}"
       ],
       "description": "Flex Utility: Create a flexbox container and transform direct children elements into flex items. \n\n Ends with an options to continue with other flex utilities,!direction,!justify,!align."
    },
    "Flex Direction": {
       "prefix": "!direction",
       "body": [
-         "flex${1|\b-,-sm-,-md-,-lg-,-xl-,-xxl-|}${2|row,row-reverse,column,column-reverse|}"
+         "flex${1|-,!MQ|}${2|row,row-reverse,column,column-reverse|}"
       ],
       "description": "Flex Direction: Set the direction of flex items in a flex container with direction utilities"
    },
    "justify-content": {
       "prefix": "!justify",
       "body": [
-         "justify-content${1|\b-,-sm-,-md-,-lg-,-xl-,-xxl-|}${2|start,end,center,between,around,evenly|}"
+         "justify-content${1|-,!MQ|}${2|start,end,center,between,around,evenly|}"
       ],
       "description": "justify-content: \n change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column) \n Read the docs: \n\n https://deploy-preview-29017--twbs-bootstrap.netlify.app/docs/5.0/utilities/flex/#justify-content \n\n "
    },
-   "Flex-Align:": {
+   "Flex-Align": {
       "prefix": "!align",
       "body": [
-         "align-${1|items,self,content|}${2|\b-,-sm-,-md-,-lg-,-xl-,-xxl-|}${3|start,end,center,baseline,stretch,around|}"
+         "align-${1|items,self,content|}${2|-,!MQ|}${3|start,end,center,baseline,stretch,around|}"
       ],
       "description": "Flex-Align: \n Read the docs: \n https://deploy-preview-29017--twbs-bootstrap.netlify.app/docs/5.0/utilities/flex/#align-items \n\n 1. align-items: change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column) \n\n  2. align-self: change their alignment on the cross axis (the y-axis to start, x-axis if flex-direction: column) \n\n 3. align-content: align flex items together on the cross axis. \n\n NOTE: CENTER & AROUND only apply to align Content."
    },
-   "!fill - use on sibling elements to force them into widths equal to their content": {
+   "!fill": {
       "prefix": "!fill",
       "body": [
          "flex-${1|fill,sm-fill,md-fill,lg-fill,xl-fill,xxl-fill|}"
@@ -127,21 +134,21 @@
    "!grow-shrink": {
       "prefix": "!grow-shrink",
       "body": [
-         "flex${1|\b,-sm,-md,-lg,-xl,-xxl|}-${2|grow,shrink|}-${3|0,1|}"
+         "flex${1|-,!MQ|}-${2|grow,shrink|}-${3|0,1|}"
       ],
       "description": "!grow-shrink - utilities to toggle a flex item’s ability to grow to fill available space"
    },
-   "!flex-wrap - utilities to toggle a flex item’s ability to grow to fill available space.": {
+   "!flex-wrap": {
       "prefix": "!flex-wrap",
       "body": [
-         "flex-${1|\b,sm-,md-,lg-,xl-,xxl-|}${2|wrap,nowrap,wrap-reverse|}"
+         "flex-${1|-,!MQ|}${2|wrap,nowrap,wrap-reverse|}"
       ],
       "description": "!flex-wrap - utilities to toggle a flex item’s ability to grow to fill available space."
    },
-   "!flex-order - Responsively, change the visual order of specific flex items with a handful of order utilities.": {
+   "!flex-order": {
       "prefix": "!flex-order",
       "body": [
-         "order-${1|\b,sm-,md-,lg-,xl-,xxl-|}${2|1,2,3,4,5,first,last|}"
+         "order-${1|-,!MQ|}${2|1,2,3,4,5,first,last|}"
       ],
       "description": "Flex Order - Change the visual order of specific flex items with a handful of order utilities."
    }
