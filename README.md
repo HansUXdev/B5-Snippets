@@ -14,8 +14,10 @@ The first, (currently only) and hands down BEST bootstrap 5 snippet extension. I
 ## Features
 1. Templates one tab away
 2. Powerful utilities
-<!-- 3. 1 hidden snippet to convert ya'll to javascript fans -->
-4. Much more planned, so consider giving it a star on [github](https://github.com/HansUXdev/B5-Snippets) or the [marketplace](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets), becoming a [sponsor](https://github.com/sponsors/HansUXdev/).
+3. Font Awesome icons ! (currently 4.7, eventually 6.0)
+4. Much more hidden...
+<!-- 5. hidden snippets to convert ya'll to javascript fans, such as !http -->
+6. Much more planned, so consider giving it a star on [github](https://github.com/HansUXdev/B5-Snippets) or the [marketplace](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets), become a [sponsor](https://github.com/sponsors/HansUXdev/).
 
 ![](Templates2.gif)
 
@@ -54,24 +56,37 @@ Unlike a lot of other snippets, this extension aims to balence user simplicity, 
 In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different snippets for the grid, whereas this will have 3, but each is more powerful.
 
 ## Roadmap
+* v1.2.5 - Introduces Flex utilities, media-query and awesome awesome 4.7.0.
 * v1.5 - Each snippet with eventually have a gif demo (soon).
 * v2 - All base [templates](https://v5.getbootstrap.com/docs/5.0/examples/) and several others will be one tab away, so consider  [sponsoring this](https://github.com/sponsors/HansUXdev/) or giving it a star.
 
+---
 
+## Powerful, Simple, **Flex** Snippets
+> **Center, position or reorder any element, by any default breakpoint with under 10 snippets.**
+
+
+Trigger | Description
+--- | ---
+`!templates` | Sets the display type.
+`!utilities` | Sets the display type.
+`b5-` | Main component snippets.
+`fa-` | Font Awesome component snippets.
+
+---
 
 ## Templates/Layout
 Templates are just one tab away. Most of the [official example templates](https://v5.getbootstrap.com/docs/5.0/examples/) have been implmented.
 
 Trigger | Description
 --- | ---
-b5-$ | Shortcut for bootstrap cdn css & js files
 !b5-$ | Shortcut creating an html document with cdn scripts included
 !b5-$Offcanvas | Offcanvas Template, one tab away.
 !b5$Template-name | More coming soon... 
 
 ---
 
-#### **Powerful Utility Classes**
+## Powerful Utility Classes
 There are two way to use utilities.
 1. **Class utilities**, which use `!` as a prefix. For example, if you want to add a utility class to an existing HTML element, inside of `class=" "` you would add `class="!spacing"` then hit tab and fill out the options, the default will be `class="mx-auto"` which sets margin to auto on left and right (x).
 2. **Wrapper elements**, ex: `b5-{txt,color,shadow,boder,spacing}` which will create a div, p, h2 then allow you to tab through the options. 
@@ -83,6 +98,23 @@ Trigger | Description
 `!font` or `b5-text` | This intentionally uses two different names to differentiate between the class utility and the wrapper element. The options are responsive positions `{|sm,md,lg,xl|}-${|left,center,right|}`, line-height `base,1,sm,lg}`, font-weight `normal,italic,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter` ,and `text-${6|none,lowercase,uppercase,capitalize|}`, decoration and `reset,break,monospace` !
 `b5-border` | change border attributes all border attributes. Read about the classes on the [official bootstrap documentation](https://v5.getbootstrap.com/docs/5.0/utilities/borders/).
 
+
+---
+
+## Powerful, Simple, **Flex** Snippets
+> **Center, position or reorder any element, by any default breakpoint with under 10 snippets.**
+
+
+Trigger | Description
+--- | ---
+`!!MQ` | Sets the display type.
+`!flex` | Sets the display type.
+`!justify` | Sets the display type.
+`!align` | Sets the display type.
+`!fill` | Sets the display type.
+`!grow-shrink` | Sets the display type.
+`!flex-wrap` | Sets the display type.
+`!flex-order` | Sets the display type.
 
 ---
 
@@ -185,15 +217,39 @@ Users appreciate release notes as you update your extension.
 
 ### 1.2.3 - Updated documentation, added templates and much more.
 
+### 1.2.5 - Fixed Bugs
+- [x] Flex Utilities ! 
+- [x] added !round utility
+- [x] Added CTA Button - with options for call and email
+- [x] breadcrumb - fixed bug and added breadcrumb item
+- [x] border- fixed bug and added !round option
+- [ ] 
+
 
 ## Supporting the Developers 
-If you use this a lot or want to see it improve consider giving it a star or  becoming a [githup sponsor](https://github.com/sponsors/HansUXdev/). 
+If you use this a lot or want to see it improve consider giving it a star, following the dev on social media below, or becoming a [githup sponsor](https://github.com/sponsors/HansUXdev/). 
 
-I author does **a lot more** than just publishing a json file for snippets.
+
+<a href="https://medium.com/@hansOnConsult" class="MEDIUM">
+   <img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" />
+</a>
+<a href="https://dev.to/hansuxdev" class="DEV TO">
+   <img src="https://img.shields.io/badge/DEV.TO-%230A0A0A.svg?&style=for-the-badge&logo=dev-dot-to&logoColor=white" />
+</a>
+<a href="https://www.youtube.com/channel/UCCGfELkPCJg1XHxQfFFz7pw/about" class="YOUTUBE">
+   <img src="https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white" />
+</a>
+<a href="https://www.twitch.tv/hansoncoding" class="Twitch">
+   <img src="https://img.shields.io/twitch/status/hansoncoding?style=for-the-badge" />
+</a>
+
+
+
+### Educational Repos
+The author does **a lot more** than just publishing a json file for snippets.
 
 Here are just a few things he's working on, while taking care of his 👶 as a full-time single father, job hunting & competing in hackathons...
 
-### Educational Repos
 Trigger | Description & Info
 --- | ---
 [JavaScript-First](https://github.com/HansUXdev/JavaScript-First) | An Open Source Book that teaches anyone how to code with JavaScript using the node.js runtime environment rather than a browser and by the end, you will build a server and a website using JavaScript..
@@ -203,7 +259,7 @@ Trigger | Description & Info
 ### Future Snippets & Extensions
 Name | Description
 --- | ---
-[JavaScript-First](https://marketplace.visualstudio.com/items?itemName=HansUXdev.javascript-first-snippets)  | JavaScript First is a huge collection of snippets useful for working with JS--based servers, browsers, databases and more. It is also meant to be paired with the book, [JavaScript-First](https://github.com/HansUXdev/JavaScript-First).
+[JavaScript-First](https://marketplace.visualstudio.com/items?itemName=HansUXdev.javascript-first-snippets)  | JavaScript First is a huge collection of snippets built to establish better code habits for working with JS-based servers, browser methods, react, mongo databases and more. It is also meant to be paired with the book, [JavaScript-First](https://github.com/HansUXdev/JavaScript-First).
 Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for.
 Code Slides | A snippet extension for creating educational slides with [vscode-reveal](https://marketplace.visualstudio.com/items?itemName=evilz.vscode-reveal) and a custom theme. (not public yet)
 Foundation 6 Snippets| This will start as a snippets for [sites](https://get.foundation/sites/docs/) and then be updated for.[email](https://get.foundation/emails). If sponsored, I will extend this to eventually replace the [CLI](https://github.com/foundation/foundation-cli) and [building blocks](https://get.foundation/building-blocks/) by implementing a custom feature that writes install kits in a similar way the [web boilerplate](https://marketplace.visualstudio.com/items?itemName=jamesqquick.web-boilerplate) writes an html, css, and js file.  (not started yet)

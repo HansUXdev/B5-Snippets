@@ -16,6 +16,7 @@ jsonConcat({
         "snippets/types/forms.json",
         "snippets/types/list-group.json",
         "snippets/types/progressbar.json",
+        "snippets/types/fonts.json",
         "snippets/types/templates.json"
     ],
     dest: "snippets/bootstrap.json"

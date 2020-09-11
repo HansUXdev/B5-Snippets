@@ -1,8 +1,8 @@
 {
   "name": "bootstrap5-snippets",
   "description": "Code snippets for Bootstrap 5 ",
-  "version": "1.2.4",
-  "displayName": "Bootstrap 5 Snippets",
+  "version": "1.2.5",
+  "displayName": "Bootstrap 5 & Font Awesome Snippets",
   "publisher": "HansUXdev",
   "icon": "bootstrap.png",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -21,7 +21,7 @@
     "package": "npx vsce package",
     "snip": "code --install-extension bootstrap5-snippets-1.2.4.vsix",
     "test": "npx vsce package && npm run snip",
-    "publish": ""
+    "prePublish": "npm run concat && npx vsce package && npm run snip"
   },
   "categories": [
     "Snippets"
@@ -29,6 +29,7 @@
   "keywords": [
     "Bootstrap 5",
     "Bootstrap",
+    "Font Awesome",
     "Snippets",
     "Bootstrap Snippets"
   ],

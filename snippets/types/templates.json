@@ -106,7 +106,7 @@
         "description": "An HTML Boilerplate with  Bootstrap 5"
     },
     "Offcanvas Template": {
-        "prefix": "!offcanvas",
+        "prefix": "!offcanvasTemplate",
         "body": [
             "<!doctype html>",
             "<html lang=\"en\">",
