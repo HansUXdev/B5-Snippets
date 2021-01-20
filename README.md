@@ -57,7 +57,7 @@ In terms of **user simplicity**, other Bootstrap 4 snippets have 5 different sni
 
 ## Roadmap
 * v1.2.5 - Introduces Flex utilities, media-query and awesome awesome 4.7.0.
-* v1.5 - Each snippet with eventually have a gif demo (soon).
+* v1.6-8 - Each snippet with eventually have a gif demo (SOON).
 * v2 - All base [templates](https://v5.getbootstrap.com/docs/5.0/examples/) and several others will be one tab away, so consider  [sponsoring this](https://github.com/sponsors/HansUXdev/) or giving it a star.
 
 ---
