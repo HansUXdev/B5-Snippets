@@ -153,10 +153,10 @@
       "description": "Flex Order - Change the visual order of specific flex items with a handful of order utilities."
    }
 ,
-	"Modal-BTN": {
+		"Modal-BTN": {
 		"prefix": "b5-modal-btn",
 		"body": [
-			"<button type=\"button\" class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|}\" data-toggle=\"modal\" data-target=\"#${2:exampleModal}\">",
+			"<button type=\"button\" class=\"btn ${1:btn-primary|btn-secondary|btn-success|btn-danger|btn-warning|btn-info|btn-light|btn-dark|btn-link}\" data-toggle=\"modal\" data-target=\"#${2:exampleModal}\">",
 			"  ${3:Launch demo modal}",
 			"</button>"
 		],
@@ -212,23 +212,23 @@
    "Bootstrap 5 Navbar Defaul": {
       "prefix": "b5-navbar-default",
       "body": [
-        "    <nav class=\"navbar ${2|navbar-expand-sm,navbar-expand-md,navbar-expand-lg|} navbar-${3|light,dark|} bg-${4|primary,secondary,success,danger,warning,info,light,dark|}\">",
+        "    <nav class=\"navbar ${2|navbar-expand-sm,navbar-expand-md,navbar-expand-lg|} ${3|navbar-light,navbar-dark|} ${4|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">",
         "        <div class=\"container-fluid\">",
-        "            <a class=\"navbar-brand\" href=\"#\">${4:Navbar}</a>",
+        "            <a class=\"navbar-brand\" href=\"#\">${5:Navbar}</a>",
         "            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${1:navbarID}\"",
         "                aria-controls=\"${1:navbarID}\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
         "                <span class=\"navbar-toggler-icon\"></span>",
         "            </button>",
         "            <div class=\"collapse navbar-collapse\" id=\"${1:navbarID}\">",
         "                <div class=\"navbar-nav\">",
-        "                    <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>",
+        "                    <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">${6:Home}</a>",
         "                    ${0}",
         "                </div>",
         "            </div>",
         "        </div>",
         "    </nav>"
       ],
-      "description": "Bootstrap 5 Navbar Defaul"
+      "description": "Bootstrap 5 Navbar Default"
     },
     "Bootstrap 5 nav-item":{
        "prefix":"b5-nav-item",
@@ -245,7 +245,7 @@
           "<a class=\"nav-link\" ${1| aria-disabled=\"false\",disabled tabindex=\"-1\" aria-disabled=\"true\"|} href=\"${2|#, |}\">${3|Home,About,Blog,Contact, |}</a>",
           ""
        ],
-       "description":"Bootstrap 5 navlink"
+       "description":"Bootstrap 5 navlink, better use inside a navbar"
     },
     "Bootstrap 5 nav-dropdown toggle":{
        "prefix":"b5-navdd-toggle",
@@ -356,7 +356,7 @@
     "Bootstrap 5 container": {
         "prefix": "b5-contain",
         "body": [
-            "<div class=\"container${1|-fluid, ,-sm,-md,-lg,-xl,-xxl|} ${2|!direction,!justify,!align,!fill,!grow-shrink,!flex-wrap,!flex-order|} ${3|!spacing,!shadow,!color,!font,overflow-hidden|}\">",
+            "<div class=\"${1|container,container-fluid,container-sm,container-md,container-lg,container-xl,container-xxl|} ${2|!direction,!justify,!align,!fill,!grow-shrink,!flex-wrap,!flex-order|} ${3|!spacing,!shadow,!color,!font,overflow-hidden|}\">",
             "\tb5-row${0}",
             "</div>"
         ],
@@ -365,7 +365,7 @@
     "Bootstrap 5 row": {
         "prefix": "b5-row",
         "body": [
-            "<div class=\"row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}\">",
+            "<div class=\"row ${1|row-cols-2,row-cols-3, auto,justify-content-md-center,|}\">",
             "\tb5-col${0}",
             "</div>"
         ],
@@ -384,21 +384,21 @@
     "Button": {
         "prefix": "b5-btn",
         "body": [
-            "<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|} btn-${2|sm,lg|} \" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+            "<a class=\"btn ${1:btn-primary|btn-secondary|btn-success|btn-danger|btn-warning|btn-info|btn-light|btn-dark|} ${2|btn-sm,btn-lg|} \" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
         ],
         "description": "Create a basic button."
     },
     "Call to Action Button": {
         "prefix": "b5-btn-cta",
         "body": [
-            "<a class=\"btn btn-${1|primary,secondary,success,danger,warning,info,light,dark|} btn-${2|sm,lg|} \" href=\"${3|#, ,tel:123-456-7890,mailto:someone@yoursite.com,bunny.mp4|}\" ${4| ,disabled,dowload|} role=\"button\">${5|Link, ,call,mail|}</a>"
+            "<a class=\"btn ${1:btn-primary|btn-secondary|btn-success|btn-danger|btn-warning|btn-info|btn-light|btn-dark|} ${2|btn-sm,btn-lg|} \" href=\"${3|#, ,tel:123-456-7890,mailto:someone@yoursite.com,bunny.mp4|}\" ${4| ,disabled,dowload|} role=\"button\">${5|Link, ,call,mail|}</a>"
         ],
         "description": "Create a CTA Button and drive your customer experience forward. \n Options: \n 1. Call\n 2. Email\n"
     },
     "BTN-Outline": {
         "prefix": "b5-btn-o",
         "body": [
-            "<a class=\"btn btn-outline-${2|primary,secondary,success,danger,warning,info,light,dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+            "<a class=\"btn ${2|btn-outline-primary,btn-outline-secondary,btn-outline-success,btn-outline-danger,btn-outline-warning,btn-outline-info,btn-outline-light,btn-outline-dark|}\" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
         ],
         "description": "Link BTN"
     },
