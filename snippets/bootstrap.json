@@ -2,56 +2,56 @@
    "Utilities": {
       "prefix": "!utility",
       "body": [
-         "${1|!spacing,!shadow,!color,!font,!flex,!direction,!justify,!align,!display|}"
+         "${1| ,!spacing,!shadow,!color,!font,!flex,!direction,!justify,!align,!display|}"
       ],
       "description": "Utilities: Forgot a utility? \n Read about them: \n\n https://deploy-preview-29017--twbs-bootstrap.netlify.app/docs/5.0/utilities/api/"
    },
    "Padding / Margin": {
       "prefix": "!spacing",
       "body": [
-         "${1|m,p|}${3|x,y,t,r,b,l|}-${4|auto,0,1,2,3,4,5|}"
+         "${1|m,p,g|}${3| ,x,y,t,r,b,l|}${4| ,-auto,-0,-1,-2,-3,-4,-5|}"
       ],
       "description": "Quickly add Padding & Margins any class."
    },
    "Color": {
       "prefix": "!color",
       "body": [
-         "${2|text,bg|}-${3|primary,secondary,success,danger,warning,info,light,dark|}"
+         "${2|text,bg|}${3| ,-primary,-secondary,-success,-danger,-warning,-info,-light,-dark|}"
       ],
       "description": "Quickly add color utility classes to any class."
    },
    "Font": {
       "prefix": "!font",
       "body": [
-         "text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|italic,normal,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6| ,lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}"
+         "${2|text,text-sm,text-md,text-lg,text-xl|}${3| ,-left,-center,-right|} ${4|lh-base,lh-1,lh-sm,lh-lg|} ${5|font-italic,font-normal,font-weight-normal,font-weight-bold,font-weight-bolder,font-weight-light,font-weight-lighter|} ${6|text-lowercase,text-uppercase,text-capitalize|} ${7|text-decoration-none,text-decoration-underline,text-decoration-line-through|} ${8|text-reset,text-break,text-monospace|}"
       ],
       "description": "Quickly add font utility classes to any class."
    },
    "Shadow": {
       "prefix": "!shadow",
       "body": [
-         "shadow${1| ,-sm,-lg|} bg-${2|white,light,dark,primary,secondary,success,danger,warning,info|} ${3|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|}"
+         "shadow${1| ,-sm,-lg|} ${2|bg-white,bg-light,bg-dark,bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info|} ${3|m,p,g|}${3| ,t,r,b,l,x,y|}${4| ,-auto,-0,-1,-2,-3,-4,-5|}"
       ],
       "description": "Add shadow to any class"
    },
    "Utility Paper Shadow": {
       "prefix": "b5-shadow",
       "body": [
-         "<div class=\"shadow${1| ,-sm,-lg|} p-3 mb-5 bg-${2|primary,secondary,success,danger,warning,info,light,dark|} ${3|!spacing,!color,!font|} \">${0}</div>"
+         "<div class=\"shadow${1| ,-sm,-lg|} p-3 mb-5 bg${2| ,-primary,-secondary,-success,-danger,-warning,-info,-light,-dark|} ${3|!spacing,!color,!font|} \">${0}</div>"
       ],
       "description": "Utility Paper Shadow"
    },
    "Utility Color": {
       "prefix": "b5-color",
       "body": [
-         "${2|text,bg|}${3|primary,secondary,success,danger,warning,info,light,dark|}"
+         "${2|text,bg|}${3| ,-primary,-secondary,-success,-danger,-warning,-info,-light,-dark|}"
       ],
       "description": "Text Utility"
    },
    "Utility Text": {
       "prefix": "b5-txt",
       "body": [
-         "<${1|div,p,h1|} class=\"text-${2|sm,md,lg,xl|}-${3|left,center,right|} lh-${4|base,1,sm,lg|} font-${5|normal,italic,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|none,lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}\">",
+         "<${1|div,p,h1|} class=\"text${2| ,-sm,-md,-lg,-xl|}${3| ,-left,-center,-right|} lh-${4|base,1,sm,lg|} font-${5|normal,italic,weight-normal,weight-bold,weight-bolder,weight-light,weight-lighter|} text-${6|none,lowercase,uppercase,capitalize|} text-${7|decoration-none,decoration-underline,decoration-line-through|} text-${8|reset,break,monospace|}\">",
          "${9:Left aligned text on all viewport sizes.}",
          "</${1|div,p,h1|}>"
       ],
@@ -60,7 +60,7 @@
    "Utility Borders": {
       "prefix": "b5-borders",
       "body": [
-         "<${1|div,p|} class=\"border${2| ,-0,-top,-right,-bottom,-left,-top-0,-right-0,-bottom-0,-left-0|} border-${3|white,primary,secondary,success,danger,warning,info,light,dark|} ${5| ,!round|}\">",
+         "<${1|div,p|} class=\"border${2| ,-0,-top,-right,-bottom,-left,-top-0,-right-0,-bottom-0,-left-0|} border${3| ,-white,-primary,-secondary,-success,-danger,-warning,-info,-light,-dark|} ${5| ,!round|}\">",
          "${10:Left aligned text on all viewport sizes.}",
          "</${1|div,p|}>"
       ],
@@ -76,7 +76,7 @@
    "Utility Spacing": {
       "prefix": "b5-spacing",
       "body": [
-         "<${1|div,p,h1|} class=\"${2|m,p|}${3|t,r,b,l,x,y|}${4|auto,0,1,2,3,4,5|} \">",
+         "<${1|div,p,h1|} class=\"${2|m,p,g|}${3| ,t,r,b,l,x,y|}${4| ,-auto,-1,-2,-3,-4,-5|} \">",
          "${0}",
          "</${1|div,p,h1|}>"
       ],
@@ -85,82 +85,82 @@
    "Display Utilities:": {
       "prefix": "!display",
       "body": [
-         "d-${2|flex,inline-flex,none,block,inline,inline-block,table,table-cell,table-row|} "
+         "${2|d-flex,d-inline-flex,d-none,d-block,d-inline,d-inline-block,d-table,d-table-cell,d-table-row|} "
       ],
       "description": "Display Utilities:"
    },
    "Utilities MQ:": {
       "prefix": "!MQ",
       "body": [
-         "${1|-sm-,-md,-lg-,-xl-,-xxl-|}"
+         "${1| ,-sm-,-md,-lg-,-xl-,-xxl-|}"
       ],
-      "description": "Display Utilities:"
+      "description": "Display Screen Size Utilities: Press ctrl+space to use"
    },
    "Flex Utility": {
       "prefix": "!flex",
       "body": [
-         "d${1|-,!MQ|}${2|flex,inline-flex|} ${3| ,!direction,!justify,!align,!fill,!grow-shrink,!flex-wrap,!flex-order|}"
+         "d${1| ,-,!MQ|}${2| ,flex,inline-flex|} ${3| ,!direction,!justify,!align,!fill,!grow-shrink,!flex-wrap,!flex-order|}"
       ],
       "description": "Flex Utility: Create a flexbox container and transform direct children elements into flex items. \n\n Ends with an options to continue with other flex utilities,!direction,!justify,!align."
    },
    "Flex Direction": {
       "prefix": "!direction",
       "body": [
-         "flex${1|-,!MQ|}${2|row,row-reverse,column,column-reverse|}"
+         "flex${1| ,-,!MQ|}${2| ,row,row-reverse,column,column-reverse|}"
       ],
       "description": "Flex Direction: Set the direction of flex items in a flex container with direction utilities"
    },
    "justify-content": {
       "prefix": "!justify",
       "body": [
-         "justify-content${1|-,!MQ|}${2|start,end,center,between,around,evenly|}"
+         "justify-content${1| ,-,!MQ|}${2|start,end,center,between,around,evenly|}"
       ],
       "description": "justify-content: \n change the alignment of flex items on the main axis (the x-axis to start, y-axis if flex-direction: column) \n Read the docs: \n\n https://deploy-preview-29017--twbs-bootstrap.netlify.app/docs/5.0/utilities/flex/#justify-content \n\n "
    },
    "Flex-Align": {
       "prefix": "!align",
       "body": [
-         "align-${1|items,self,content|}${2|-,!MQ|}${3|start,end,center,baseline,stretch,around|}"
+         "${1|align-items,align-self,align-content|}${2| ,-,!MQ|}${3| ,start,end,center,baseline,stretch,around|}"
       ],
       "description": "Flex-Align: \n Read the docs: \n https://deploy-preview-29017--twbs-bootstrap.netlify.app/docs/5.0/utilities/flex/#align-items \n\n 1. align-items: change the alignment of flex items on the cross axis (the y-axis to start, x-axis if flex-direction: column) \n\n  2. align-self: change their alignment on the cross axis (the y-axis to start, x-axis if flex-direction: column) \n\n 3. align-content: align flex items together on the cross axis. \n\n NOTE: CENTER & AROUND only apply to align Content."
    },
    "!fill": {
       "prefix": "!fill",
       "body": [
-         "flex-${1|fill,sm-fill,md-fill,lg-fill,xl-fill,xxl-fill|}"
+         "${1|flex-fill,flex-sm-fill,flex-md-fill,flex-lg-fill,flex-xl-fill,flex-xxl-fill|}"
       ],
       "description": "!fill - use on sibling elements to force them into widths equal to their content"
    },
    "!grow-shrink": {
       "prefix": "!grow-shrink",
       "body": [
-         "flex${1|-,!MQ|}-${2|grow,shrink|}-${3|0,1|}"
+         "flex${1| ,-,!MQ|}-${2|grow,shrink|}-${3|0,1|}"
       ],
       "description": "!grow-shrink - utilities to toggle a flex item’s ability to grow to fill available space"
    },
    "!flex-wrap": {
       "prefix": "!flex-wrap",
       "body": [
-         "flex-${1|-,!MQ|}${2|wrap,nowrap,wrap-reverse|}"
+         "flex${1| ,-,!MQ|}${2|wrap,nowrap,wrap-reverse|}"
       ],
       "description": "!flex-wrap - utilities to toggle a flex item’s ability to grow to fill available space."
    },
    "!flex-order": {
       "prefix": "!flex-order",
       "body": [
-         "order-${1|-,!MQ|}${2|1,2,3,4,5,first,last|}"
+         "order${1| ,-,!MQ|}${2|1,2,3,4,5,first,last|}"
       ],
       "description": "Flex Order - Change the visual order of specific flex items with a handful of order utilities."
    }
 ,
-		"Modal-BTN": {
+	"Modal-BTN": {
 		"prefix": "b5-modal-btn",
 		"body": [
-			"<button type=\"button\" class=\"btn ${1:btn-primary|btn-secondary|btn-success|btn-danger|btn-warning|btn-info|btn-light|btn-dark|btn-link}\" data-toggle=\"modal\" data-target=\"#${2:exampleModal}\">",
+			"<button type=\"button\" class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|}\" data-toggle=\"modal\" data-target=\"#${2:staticBackdrop}\">",
 			"  ${3:Launch demo modal}",
 			"</button>"
 		],
-		"description": "Modal-Body"
+		"description": "Modal Launching button: data target must be same as modal id"
 	},
 	"Modal-body": {
 		"prefix": "b5-modal-body",
@@ -183,7 +183,7 @@
 			"</div>",
 			""
 		],
-		"description": "Modal-Body"
+		"description": "Modal-Body: This is a static modal, you can close it by button or icon."
 	},
 	"Modal-Footer": {
 		"prefix": "b5-modal-footer",
@@ -206,15 +206,15 @@
 			"</div>",
 			""
 		],
-		"description": "Modal-BTN"
+		"description": "This is a modal for long content, can be scrollable."
 	}
 ,
-   "Bootstrap 5 Navbar Defaul": {
+   "Bootstrap 5 Navbar Default": {
       "prefix": "b5-navbar-default",
       "body": [
         "    <nav class=\"navbar ${2|navbar-expand-sm,navbar-expand-md,navbar-expand-lg|} ${3|navbar-light,navbar-dark|} ${4|bg-primary,bg-secondary,bg-success,bg-danger,bg-warning,bg-info,bg-light,bg-dark|}\">",
         "        <div class=\"container-fluid\">",
-        "            <a class=\"navbar-brand\" href=\"#\">${5:Navbar}</a>",
+        "            <a class=\"navbar-brand\" href=\"#\">${5:Brand/Logo}</a>",
         "            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#${1:navbarID}\"",
         "                aria-controls=\"${1:navbarID}\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
         "                <span class=\"navbar-toggler-icon\"></span>",
@@ -222,7 +222,7 @@
         "            <div class=\"collapse navbar-collapse\" id=\"${1:navbarID}\">",
         "                <div class=\"navbar-nav\">",
         "                    <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">${6:Home}</a>",
-        "                    ${0}",
+        "                    b5-navlink${0}",
         "                </div>",
         "            </div>",
         "        </div>",
@@ -365,7 +365,7 @@
     "Bootstrap 5 row": {
         "prefix": "b5-row",
         "body": [
-            "<div class=\"row ${1|row-cols-2,row-cols-3, auto,justify-content-md-center,|}\">",
+            "<div class=\"row ${1|row-cols-2,row-cols-3, auto,justify-content-md-center|}\">",
             "\tb5-col${0}",
             "</div>"
         ],
@@ -384,14 +384,14 @@
     "Button": {
         "prefix": "b5-btn",
         "body": [
-            "<a class=\"btn ${1:btn-primary|btn-secondary|btn-success|btn-danger|btn-warning|btn-info|btn-light|btn-dark|} ${2|btn-sm,btn-lg|} \" href=\"${3|#, |}\" role=\"button\">${4| ,Link|}</a>"
+            "<a class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} ${2|btn-sm,btn-lg|} \" href=\"${3|#, |}\" role=\"button\">${4:Link}</a>"
         ],
         "description": "Create a basic button."
     },
     "Call to Action Button": {
         "prefix": "b5-btn-cta",
         "body": [
-            "<a class=\"btn ${1:btn-primary|btn-secondary|btn-success|btn-danger|btn-warning|btn-info|btn-light|btn-dark|} ${2|btn-sm,btn-lg|} \" href=\"${3|#, ,tel:123-456-7890,mailto:someone@yoursite.com,bunny.mp4|}\" ${4| ,disabled,dowload|} role=\"button\">${5|Link, ,call,mail|}</a>"
+            "<a class=\"btn ${1|btn-primary,btn-secondary,btn-success,btn-danger,btn-warning,btn-info,btn-light,btn-dark,btn-link|} ${2|btn-sm,btn-lg|} \" href=\"${3|#, ,tel:123-456-7890,mailto:someone@yoursite.com,bunny.mp4|}\" ${4| ,disabled,dowload|} role=\"button\">${5|Link, ,call,mail|}</a>"
         ],
         "description": "Create a CTA Button and drive your customer experience forward. \n Options: \n 1. Call\n 2. Email\n"
     },
@@ -418,7 +418,7 @@
             "    b5-btn${0}",
             "</div>"
         ],
-        "description": "Button Group"
+        "description": "Button Group-Press ctrl+space in !spacing and at the end"
     }
 ,
     "Button Reveal": {
@@ -479,7 +479,7 @@
         "prefix": "b5-pagination",
         "body": [
             "<nav aria-label=\"${10:Page navigation example}\">",
-            "  <ul class=\"pagination ${1|pagination-sm,pagination-lg;|}\">",
+            "  <ul class=\"pagination ${1|pagination-sm,pagination-lg|}\">",
             "    <li class=\"page-item\">",
             "      <a class=\"page-link\" href=\"#\" aria-label=\"Previous\">",
             "        <span aria-hidden=\"true\">${2|Previous,&laquo;|}</span>",
@@ -645,7 +645,7 @@
         "prefix": "b5-progress",
         "body": [
             "<div class=\"progress\">",
-            "    <div class=\"${1|progress-bar,progress-bar progress-bar-striped|}  bg-${2|success,info,success,warning,wardanger}}\" role=\"progressbar\" style=\"width: ${3|25,50,75,100, |}%;\"",
+            "    <div class=\"${1|progress-bar,progress-bar progress-bar-striped|}  ${2|bg-success,bg-info,bg-success,bg-warning,bg-danger}}\" role=\"progressbar\" style=\"width: ${3|25,50,75,100, |}%;\"",
             "        aria-valuenow=\"${3|25,50,75,100, |}\" aria-valuemin=\"${4:0}\" aria-valuemax=\"${5:100}\" ${6| ,progress-bar-animated}>${6:Description}</div>",
             "</div>"
         ],
