@@ -1,3 +1,5 @@
+# Currently NOT maintaining...
+
 # Bootstrap 5 
 [![Version](https://vsmarketplacebadge.apphb.com/version/HansUXdev.bootstrap5-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/HansUXdev.bootstrap5-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=HansUXdev.bootstrap5-snippets)
